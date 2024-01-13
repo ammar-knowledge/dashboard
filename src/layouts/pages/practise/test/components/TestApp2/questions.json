@@ -1,0 +1,21 @@
+[{
+    "id": 1,
+    "question": "What is the capital of France?",
+    "options": ["Paris", "London", "Berlin", "Madrid"],
+    "correctAnswer": "Paris",
+    "answerExplanantion": "Paris is the captial of France. It was created in 1983"
+  },
+  {
+    "id": 2,
+    "question": "Which planet is known as the Red Planet?",
+    "options": ["Mars", "Jupiter", "Venus", "Saturn"],
+    "correctAnswer": "Mars",
+    "answerExplanantion": "Mars is the first planet in the solar system"
+  },
+  {
+    "id": 3,
+    "question": "What color is water?",
+    "options": ["Blue", "Yellow", "Purple", "White"],
+    "correctAnswer": "Blue",
+    "answerExplanantion": "Water is always blue"
+  }]
