@@ -1,18 +1,13 @@
-// .storybook/preview.js
-
-import { addDecorator } from '@storybook/react';
-import { withThemeFromJSXProvider } from '@storybook/addon-themes';
-import { lightTheme, darkTheme } from './theme';
-import { ThemeProvider, CssBaseline } from '@mui/material';
-
-addDecorator(
-  withThemeFromJSXProvider({
-    GlobalStyles: CssBaseline,
-    Provider: ThemeProvider,
-    themes: {
-      light: lightTheme,
-      dark: darkTheme,
+/** @type { import('@storybook/react').Preview } */
+const preview = {
+  parameters: {
+    controls: {
+      matchers: {
+        color: /(background|color)$/i,
+        date: /Date$/i,
+      },
     },
-    defaultTheme: 'light',
-  })
-);
+  },
+};
+
+export default preview;
