@@ -9,7 +9,14 @@ const config = {
     "@storybook/addon-interactions",
     "@storybook/addon-themes",
     "@storybook/themes",
-    "@storybook/addon-mdx-gfm"
+    "@storybook/addon-mdx-gfm",
+    "storybook-addon-material-ui",
+    "storybook-addon-pseudo-states",
+    "@storybook/addon-a11y",
+    "@storybook/addon-designs",
+    "@storybook/addon-devkit",
+    "@storybook/preset-create-react-app",
+    "@storybook/addon-backgrounds"    
   ],
   framework: {
     name: "@storybook/react-webpack5",
