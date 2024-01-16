@@ -29,7 +29,6 @@
     "@react-jvectormap/world": "1.1.2",
     "@storybook/addon-actions": "^8.0.0-alpha.10",
     "@storybook/addon-console": "^2.0.0",
-    "@storybook/addon-devkit": "^1.4.2",
     "@storybook/addon-docs": "^8.0.0-alpha.10",
     "@storybook/addon-measure": "^8.0.0-alpha.10",
     "@storybook/addon-toolbars": "^8.0.0-alpha.10",
@@ -94,6 +93,7 @@
     "@storybook/addon-a11y": "^8.0.0-alpha.10",
     "@storybook/addon-backgrounds": "^8.0.0-alpha.10",
     "@storybook/addon-designs": "^7.0.9",
+    "@storybook/addon-devkit": "^1.4.2",
     "@storybook/addon-essentials": "^8.0.0-alpha.10",
     "@storybook/addon-interactions": "^8.0.0-alpha.10",
     "@storybook/addon-links": "^8.0.0-alpha.10",
@@ -124,6 +124,7 @@
     "storybook": "^8.0.0-alpha.10",
     "storybook-addon-material-ui": "^0.9.0-alpha.24",
     "storybook-addon-pseudo-states": "^2.1.2",
+    "storybook-addon-themes": "^6.1.0",
     "style-loader": "^3.3.4",
     "webpack": "^5.89.0"
   },
