@@ -2,7 +2,7 @@ import { ThemeProvider, CssBaseline } from '@mui/material';
 import { withThemeFromJSXProvider } from '@storybook/addon-themes';
 
 /* TODO: update import for your custom Material UI themes */
-import { lightTheme, darkTheme } from '../path/to/themes';/** @type { import('@storybook/react').Preview } */
+import { lightTheme, darkTheme } from '.storybook/preview.js';/** @type { import('@storybook/react').Preview } */
 const preview = {
   parameters: {
     actions: { argTypesRegex: '^on[A-Z].*' },
@@ -14,16 +14,18 @@ const preview = {
     },
   },
 
-  decorators: [withThemeFromJSXProvider({
-    GlobalStyles: CssBaseline,
-    Provider: ThemeProvider,
-    themes: {
-      // Provide your custom themes here
-      light: lightTheme,
-      dark: darkTheme,
-    },
-    defaultTheme: 'light',
-  })]
+  decorators: [
+    withThemeFromJSXProvider({
+      GlobalStyles: CssBaseline,
+      Provider: ThemeProvider,
+      themes: {
+        // Provide your custom themes here
+        light: lightTheme,
+        dark: darkTheme,
+      },
+      defaultTheme: 'light',
+    }),
+  ],
 };
 
 export default preview;
