@@ -1,31 +1,18 @@
-import { ThemeProvider, CssBaseline } from '@mui/material';
+// .storybook/preview.js
+
+import { addDecorator } from '@storybook/react';
 import { withThemeFromJSXProvider } from '@storybook/addon-themes';
+import { lightTheme, darkTheme } from './theme';
+import { ThemeProvider, CssBaseline } from '@mui/material';
 
-/* TODO: update import for your custom Material UI themes */
-import { lightTheme, darkTheme } from '.storybook/preview.js';/** @type { import('@storybook/react').Preview } */
-const preview = {
-  parameters: {
-    actions: { argTypesRegex: '^on[A-Z].*' },
-    controls: {
-      matchers: {
-        color: /(background|color)$/i,
-        date: /Date$/i,
-      },
+addDecorator(
+  withThemeFromJSXProvider({
+    GlobalStyles: CssBaseline,
+    Provider: ThemeProvider,
+    themes: {
+      light: lightTheme,
+      dark: darkTheme,
     },
-  },
-
-  decorators: [
-    withThemeFromJSXProvider({
-      GlobalStyles: CssBaseline,
-      Provider: ThemeProvider,
-      themes: {
-        // Provide your custom themes here
-        light: lightTheme,
-        dark: darkTheme,
-      },
-      defaultTheme: 'light',
-    }),
-  ],
-};
-
-export default preview;
+    defaultTheme: 'light',
+  })
+);
