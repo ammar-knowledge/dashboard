@@ -25,4 +25,5 @@ package-lock.json
 yarn.lock
 pnpm-lock.yaml
 
-commit.sh
+.vscode
+.history
