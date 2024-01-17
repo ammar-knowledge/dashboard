@@ -1,11 +1,11 @@
 
 > material-dashboard-2-pro-react@2.2.0 build-storybook
-> storybook build --output-dir C:\Users\AMMARA~1\AppData\Local\Temp\chromatic--16556-tJW10sX68rKA
+> storybook build --output-dir C:\Users\AMMARA~1\AppData\Local\Temp\chromatic--17392-ETLq3h6tT3mq
 
 @storybook/cli v8.0.0-alpha.10
 
-info => Cleaning outputDir: ..\..\..\AMMARA~1\AppData\Local\Temp\chromatic--16556-tJW10sX68rKA
-(node:8504) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+info => Cleaning outputDir: ..\..\..\AMMARA~1\AppData\Local\Temp\chromatic--17392-ETLq3h6tT3mq
+(node:13400) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 info => Loading presets
 WARN Could not resolve addon "@storybook/themes", skipping. Is it installed?
@@ -13,7 +13,7 @@ info Found existing addon "@storybook/addon-backgrounds", skipping.
 WARN Could not resolve addon "@storybook/themes", skipping. Is it installed?
 info Found existing addon "@storybook/addon-backgrounds", skipping.
 info => Building manager..
-info => Manager built (576 ms)
+info => Manager built (385 ms)
 info => Building preview..
 info Addon-docs: using MDX3
 info => Loading Webpack configuration from `node_modules\react-scripts`
@@ -125,23 +125,23 @@ info => Using default Webpack5 setup
 <s> [webpack.Progress] 9% setup compilation
 <s> [webpack.Progress] 10% building
 <s> [webpack.Progress] 10% building 0/1 entries 0/0 dependencies 0/0 modules
-info => Copying static files: public at ..\..\..\AMMARA~1\AppData\Local\Temp\chromatic--16556-tJW10sX68rKA
+info => Copying static files: public at ..\..\..\AMMARA~1\AppData\Local\Temp\chromatic--17392-ETLq3h6tT3mq
 <s> [webpack.Progress] 10% building import loader ./node_modules/@storybook/preset-react-webpack/dist/loaders/react-docgen-loader.js
 <s> [webpack.Progress] 10% building 0/1 entries 1/1 dependencies 0/1 modules
 WARN No story files found for the specified pattern: src\**\*.mdx
 <s> [webpack.Progress] 17% building import loader ./node_modules/babel-loader/lib/index.js
 <s> [webpack.Progress] 17% building import loader ./node_modules/source-map-loader/dist/cjs.js
 <s> [webpack.Progress] 17% building 0/1 entries 21/21 dependencies 3/21 modules
-<s> [webpack.Progress] 27% building 0/1 entries 83/99 dependencies 16/50 modules
-<s> [webpack.Progress] 36% building import loader ./node_modules/@storybook/builder-webpack5/dist/loaders/export-order-loader.js
-<s> [webpack.Progress] 36% building import loader ./node_modules/unplugin/dist/webpack/loaders/transform.js
-<s> [webpack.Progress] 36% building 0/1 entries 106/114 dependencies 29/60 modules
-<s> [webpack.Progress] 34% building import loader ./node_modules/mini-css-extract-plugin/dist/loader.js
-<s> [webpack.Progress] 34% building import loader ./node_modules/css-loader/dist/cjs.js
-<s> [webpack.Progress] 34% building import loader ./node_modules/postcss-loader/dist/cjs.js
-<s> [webpack.Progress] 34% building 0/1 entries 224/245 dependencies 59/131 modules
-<s> [webpack.Progress] 43% building 0/1 entries 300/353 dependencies 95/157 modules
-<s> [webpack.Progress] 47% building 0/1 entries 727/767 dependencies 203/300 modules
+<s> [webpack.Progress] 27% building 0/1 entries 83/99 dependencies 16/49 modules
+<s> [webpack.Progress] 38% building import loader ./node_modules/@storybook/builder-webpack5/dist/loaders/export-order-loader.js
+<s> [webpack.Progress] 38% building import loader ./node_modules/unplugin/dist/webpack/loaders/transform.js
+<s> [webpack.Progress] 38% building 0/1 entries 108/119 dependencies 32/61 modules
+<s> [webpack.Progress] 36% building import loader ./node_modules/mini-css-extract-plugin/dist/loader.js
+<s> [webpack.Progress] 36% building import loader ./node_modules/css-loader/dist/cjs.js
+<s> [webpack.Progress] 36% building import loader ./node_modules/postcss-loader/dist/cjs.js
+<s> [webpack.Progress] 36% building 0/1 entries 251/286 dependencies 71/145 modules
+<s> [webpack.Progress] 40% building 0/1 entries 334/371 dependencies 100/180 modules
+<s> [webpack.Progress] 46% building 0/1 entries 740/767 dependencies 200/304 modules
 <s> [webpack.Progress] 65% building 1/1 entries 1016/1016 dependencies 399/399 modules
 <s> [webpack.Progress] 65% building
 <s> [webpack.Progress] 69% building finish
@@ -371,5 +371,5 @@ WARN
 <s> [webpack.Progress] 99% cache shutdown
 <s> [webpack.Progress] 100% 
 
-info => Preview built (25 s)
-info => Output directory: C:\Users\AMMARA~1\AppData\Local\Temp\chromatic--16556-tJW10sX68rKA
+info => Preview built (22 s)
+info => Output directory: C:\Users\AMMARA~1\AppData\Local\Temp\chromatic--17392-ETLq3h6tT3mq
