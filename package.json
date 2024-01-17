@@ -2,7 +2,9 @@
   "name": "material-dashboard-2-pro-react",
   "version": "2.2.0",
   "private": true,
-  "author": "Creative Tim",
+  "author": {
+    "name": "Creative Tim"
+  },
   "license": "See license in https://www.creative-tim.com/license",
   "description": "React version of Material Dashboard 2 PRO by Creative Tim",
   "bugs": {
@@ -67,7 +69,8 @@
     "eject": "react-scripts eject",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "chromatic": "npx chromatic --project-token=chpt_4c735a57af77dab"
   },
   "eslintConfig": {
     "extends": [
@@ -108,6 +111,7 @@
     "@storybook/react-webpack5": "^8.0.0-alpha.10",
     "@storybook/test": "^8.0.0-alpha.10",
     "@storybook/theming": "^8.0.0-alpha.10",
+    "chromatic": "^10.3.0",
     "cross-env": "^7.0.3",
     "css-loader": "^6.9.0",
     "eslint": "8.39.0",
@@ -130,5 +134,8 @@
   },
   "overrides": {
     "svgo": "3.0.2"
-  }
+  },
+  "readme": "ERROR: No README data found!",
+  "homepage": "https://github.com/creativetimofficial/ct-material-dashboard-pro-react#readme",
+  "_id": "material-dashboard-2-pro-react@2.2.0"
 }
