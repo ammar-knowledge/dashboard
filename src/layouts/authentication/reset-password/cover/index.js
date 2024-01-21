@@ -1,70 +1,109 @@
-/**
-=========================================================
-* Material Dashboard 2 PRO React - v2.2.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-dashboard-pro-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
-// @mui material components
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import Card from "@mui/material/Card";
-
-// Material Dashboard 2 PRO React components
+import Switch from "@mui/material/Switch";
 import MDBox from "components/MDBox";
 import MDTypography from "components/MDTypography";
 import MDInput from "components/MDInput";
 import MDButton from "components/MDButton";
+import BasicLayout from "layouts/authentication/components/BasicLayout";
+import bgImage from "assets/images/AuthBackground.png";
+import { Grid, Stack } from "@mui/material";
+import Button from "@mui/material/Button";
+import Box from "@mui/material/Box";
+import axiosHttp from "utils/axios";
+import {Snackbar} from "@mui/material";
+function Basic() {
+  const [rememberMe, setRememberMe] = useState(false);
+  const [email, setEmail] = useState('')
+  const handleSetRememberMe = () => setRememberMe(!rememberMe);
 
-// Authentication layout components
-import CoverLayout from "layouts/authentication/components/CoverLayout";
+  const ResetPasswordRequest = () => {
+    const payload = {
+      email: email,
+    }
+    console.log(payload)
+    axiosHttp.post('v1/auth/forgetpassword', payload).then((res) => {
+      console.log(res)
+      openSnakBar({ vertical: 'top', horizontal: 'right' })
+    }).catch((err) => {
+      console.log(err)
+    })
+  }
 
-// Images
-import bgImage from "assets/images/bg-reset-cover.jpeg";
+  const [state, setState] = useState({
+    open: false,
+    vertical: 'top',
+    horizontal: 'center',
+  });
+  const { vertical, horizontal, open } = state;
 
-function Cover() {
+  const openSnakBar = (newState) => {
+    setState({ ...newState, open: true });
+  };
+  const handleClose = () => {
+    setState({ ...state, open: false });
+  };
+
   return (
-    <CoverLayout coverHeight="50vh" image={bgImage}>
-      <Card>
-        <MDBox
-          variant="gradient"
-          bgColor="info"
-          borderRadius="lg"
-          coloredShadow="success"
-          mx={2}
-          mt={-3}
-          py={2}
-          mb={1}
-          textAlign="center"
-        >
-          <MDTypography variant="h3" fontWeight="medium" color="white" mt={1}>
-            Reset Password
-          </MDTypography>
-          <MDTypography display="block" variant="button" color="white" my={1}>
-            You will receive an e-mail in maximum 60 seconds
-          </MDTypography>
-        </MDBox>
-        <MDBox pt={4} pb={3} px={3}>
+    <BasicLayout image={bgImage}>
+      <Box sx={{ width: 500 }}>
+        <Snackbar
+          anchorOrigin={{ vertical, horizontal }}
+          open={open}
+          style={{
+            backgroundColor: '#21C0A0',
+            textColor: "#fff"
+          }}
+          autoHideDuration={6000}
+          onClose={handleClose}
+          message="Password Reset Email Send to your Email"
+          key={vertical + horizontal}
+        />
+      </Box>
+      <Card sx={{ width: "400px", marginLeft: 6, marginTop: 5 }}>
+        <MDBox pt={3} pb={3} px={3}>
           <MDBox component="form" role="form">
-            <MDBox mb={4}>
-              <MDInput type="email" label="Email" variant="standard" fullWidth />
+            <Stack sx={{ marginBottom: 2 }} direction="column" alignItems={"start"} justifyContent={"space-between"}>
+              <MDTypography variant="h4" fontWeight="medium" color="Black" mt={1}>
+                Reset Password
+              </MDTypography>
+              <div style={{ marginTop: 10 }}>
+                <MDBox mb={2} lineHeight={1}>
+                  <MDTypography variant="button" color="text" fontWeight="light">
+                    Enter your email address and we will send you
+                    instructions to reset your password
+                  </MDTypography>
+                </MDBox>
+              </div>
+            </Stack>
+            <MDBox mb={2}>
+              <MDInput type="email" label="Email" fullWidth onChange={(event) => setEmail(event.target.value)} />
             </MDBox>
-            <MDBox mt={6} mb={1}>
-              <MDButton variant="gradient" color="info" fullWidth>
-                reset
-              </MDButton>
-            </MDBox>
+            <Grid container justifyContent={"center"}>
+              <MDBox sx={{ width: 150 }} mt={4} mb={1}>
+                <Button disableElevation size="large" onClick={ResetPasswordRequest} variant="contained" style={{ backgroundColor: '#21C0A0', paddingLeft: 40, paddingRight: 40, color: "#fff" }}>
+                  Continue
+                </Button>
+              </MDBox>
+            </Grid >
+            <Grid container justifyContent={"center"} mt={4}>
+              <MDTypography
+                component={Link}
+                to="/authentication/sign-up"
+                variant="button"
+                color="info"
+                fontWeight="medium"
+                textGradient
+              >
+                Sign up
+              </MDTypography>
+            </Grid>
           </MDBox>
         </MDBox>
-      </Card>
-    </CoverLayout>
+      </Card>`
+    </BasicLayout>
   );
 }
 
-export default Cover;
+export default Basic;

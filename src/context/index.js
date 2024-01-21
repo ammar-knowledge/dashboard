@@ -1,16 +1,16 @@
 /**
 =========================================================
-* Material Dashboard 2 PRO React - v2.2.0
+* Material Dashboard 2 React - v2.2.0
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-dashboard-pro-react
+* Product Page: https://www.creative-tim.com/product/material-dashboard-react
 * Copyright 2023 Creative Tim (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
  =========================================================
 
-* The above  notice and this permission notice shall be included in all copies or substantial portions of the Software.
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
 /**
@@ -18,18 +18,18 @@ Coded by www.creative-tim.com
   you can customize the states for the different components here.
 */
 
-import { createContext, useContext, useMemo, useReducer } from "react";
+import { createContext, useContext, useReducer, useMemo } from "react";
 
 // prop-types is a library for typechecking of props
 import PropTypes from "prop-types";
 
-// The Material Dashboard 2 PRO React main context
+// Material Dashboard 2 React main context
 const MaterialUI = createContext();
 
 // Setting custom name for the context which is visible on react dev tools
 MaterialUI.displayName = "MaterialUIContext";
 
-// Material Dashboard 2 PRO React reducer
+// Material Dashboard 2 React reducer
 function reducer(state, action) {
   switch (action.type) {
     case "MINI_SIDENAV": {
@@ -62,13 +62,19 @@ function reducer(state, action) {
     case "DARKMODE": {
       return { ...state, darkMode: action.value };
     }
+    case "FILTER_DRAWER": {
+      return { ...state, filterDrawer: action.value }
+    }
+    case 'RESET_FILTER': {
+      return { ...state, resetFilter:action.value}
+    }
     default: {
       throw new Error(`Unhandled action type: ${action.type}`);
     }
   }
 }
 
-// Material Dashboard 2 PRO React context provider
+// Material Dashboard 2 React context provider
 function MaterialUIControllerProvider({ children }) {
   const initialState = {
     miniSidenav: false,
@@ -81,6 +87,8 @@ function MaterialUIControllerProvider({ children }) {
     direction: "ltr",
     layout: "dashboard",
     darkMode: false,
+    filterDrawer: false,
+    resetFilter: false
   };
 
   const [controller, dispatch] = useReducer(reducer, initialState);
@@ -90,7 +98,7 @@ function MaterialUIControllerProvider({ children }) {
   return <MaterialUI.Provider value={value}>{children}</MaterialUI.Provider>;
 }
 
-// Material Dashboard 2 PRO React custom hook for using context
+// Material Dashboard 2 React custom hook for using context
 function useMaterialUIController() {
   const context = useContext(MaterialUI);
 
@@ -119,6 +127,8 @@ const setOpenConfigurator = (dispatch, value) => dispatch({ type: "OPEN_CONFIGUR
 const setDirection = (dispatch, value) => dispatch({ type: "DIRECTION", value });
 const setLayout = (dispatch, value) => dispatch({ type: "LAYOUT", value });
 const setDarkMode = (dispatch, value) => dispatch({ type: "DARKMODE", value });
+const setFilterDrawer = (dispatch, value) => dispatch({ type: "FILTER_DRAWER", value })
+const resetFilter = (dispatch, value) => dispatch({ type: "RESET_FILTER", value })
 
 export {
   MaterialUIControllerProvider,
@@ -133,4 +143,6 @@ export {
   setDirection,
   setLayout,
   setDarkMode,
+  setFilterDrawer,
+  resetFilter
 };

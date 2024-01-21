@@ -1,0 +1,56 @@
+import React from 'react';
+import { render, screen, fireEvent } from '@testing-library/react';
+import Basic from './Basic';
+
+test('should navigate to dashboard if token is present and not undefined', () => {
+  const navigate = jest.fn();
+  render(<Basic navigate={navigate} />);
+  localStorage.setItem('user-token', 'test-token');
+  expect(navigate).toHaveBeenCalledWith('/dashboard');
+});
+
+test('should not navigate to dashboard if token is undefined', () => {
+  const navigate = jest.fn();
+  render(<Basic navigate={navigate} />);
+  localStorage.setItem('user-token', undefined);
+  expect(navigate).not.toHaveBeenCalled();
+});
+
+test('should not navigate to dashboard if token is not present', () => {
+  const navigate = jest.fn();
+  render(<Basic navigate={navigate} />);
+  localStorage.removeItem('user-token');
+  expect(navigate).not.toHaveBeenCalled();
+});
+
+test('should call handleLogin function on button click', () => {
+  const navigate = jest.fn();
+  render(<Basic navigate={navigate} />);
+  const axiosHttp = {
+    post: jest.fn().mockResolvedValue({ data: { token: 'test-token' } })
+  };
+  const openSnakBar = jest.fn();
+  const SaveLocal = jest.fn();
+  const payload = {
+    email: 'test@example.com',
+    password: 'password'
+  };
+  const emailInput = screen.getByLabelText('Email');
+  const passwordInput = screen.getByLabelText('Password');
+  const loginButton = screen.getByRole('button', { name: 'Login' });
+  fireEvent.change(emailInput, { target: { value: payload.email } });
+  fireEvent.change(passwordInput, { target: { value: payload.password } });
+  fireEvent.click(loginButton);
+  expect(axiosHttp.post).toHaveBeenCalledWith('/api/user/sign_in', payload);
+  expect(openSnakBar).toHaveBeenCalledWith(
+    { vertical: 'top', horizontal: 'right' },
+    'Logged in Suuccessfully',
+    false
+  );
+  expect(SaveLocal).toHaveBeenCalledWith('user-data', {
+    email: payload.email,
+    password: payload.password
+  });
+  expect(SaveLocal).toHaveBeenCalledWith('user-token', 'test-token');
+  expect(navigate).toHaveBeenCalledWith('/dashboard');
+});

@@ -25,7 +25,7 @@ import Icon from "@mui/material/Icon";
 import MDBox from "components/MDBox";
 import MDTypography from "components/MDTypography";
 
-function BookingCard({ image, title, description, price, location, action }) {
+function BookingCard({ image, title, description, grades, duration, action }) {
   return (
     <Card
       sx={{
@@ -91,14 +91,14 @@ function BookingCard({ image, title, description, price, location, action }) {
         lineHeight={1}
       >
         <MDTypography variant="body2" fontWeight="regular" color="text">
-          {price}
+          Grades &nbsp;{grades}
         </MDTypography>
         <MDBox color="text" display="flex" alignItems="center">
           <Icon color="inherit" sx={{ m: 0.5 }}>
-            place
+            access_time
           </Icon>
           <MDTypography variant="button" fontWeight="light" color="text">
-            {location}
+            {duration}
           </MDTypography>
         </MDBox>
       </MDBox>

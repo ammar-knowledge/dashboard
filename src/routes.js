@@ -1,536 +1,247 @@
-/**
-=========================================================
-* Material Dashboard 2 PRO React - v2.2.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-dashboard-pro-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
-/** 
-  All of the routes for the Material Dashboard 2 PRO React are added here,
-  You can add a new route, customize the routes and delete the routes here.
-
-  Once you add a new route on this file it will be visible automatically on
-  the Sidenav.
-
-  For adding a new route you can follow the existing routes in the routes array.
-  1. The `type` key with the `collapse` value is used for a route.
-  2. The `type` key with the `title` value is used for a title inside the Sidenav. 
-  3. The `type` key with the `divider` value is used for a divider between Sidenav items.
-  4. The `name` key is used for the name of the route on the Sidenav.
-  5. The `key` key is used for the key of the route (It will help you with the key prop inside a loop).
-  6. The `icon` key is used for the icon of the route on the Sidenav, you have to add a node.
-  7. The `collapse` key is used for making a collapsible item on the Sidenav that contains other routes
-  inside (nested routes), you need to pass the nested routes inside an array as a value for the `collapse` key.
-  8. The `route` key is used to store the route location which is used for the react router.
-  9. The `href` key is used to store the external links location.
-  10. The `title` key is only for the item with the type of `title` and its used for the title text on the Sidenav.
-  10. The `component` key is used to store the component of its route.
-*/
-
-// Material Dashboard 2 PRO React layouts
-import Analytics from "layouts/dashboards/analytics";
-import Sales from "layouts/dashboards/sales";
-import ProfileOverview from "layouts/pages/profile/profile-overview";
-import AllProjects from "layouts/pages/profile/all-projects";
-import NewUser from "layouts/pages/users/new-user";
-import TestForm from "layouts/pages/practise/test";
-import Settings from "layouts/pages/account/settings";
-import Billing from "layouts/pages/account/billing";
-import Invoice from "layouts/pages/account/invoice";
-import Timeline from "layouts/pages/projects/timeline";
-import PricingPage from "layouts/pages/pricing-page";
-import Widgets from "layouts/pages/widgets";
-import RTL from "layouts/pages/rtl";
-import Charts from "layouts/pages/charts";
-import Notifications from "layouts/pages/notifications";
-import Kanban from "layouts/applications/kanban";
-import Wizard from "layouts/applications/wizard";
-import DataTables from "layouts/applications/data-tables";
-import Calendar from "layouts/applications/calendar";
-import NewProduct from "layouts/ecommerce/products/new-product";
-import EditProduct from "layouts/ecommerce/products/edit-product";
-import ProductPage from "layouts/ecommerce/products/product-page";
-import OrderList from "layouts/ecommerce/orders/order-list";
-import OrderDetails from "layouts/ecommerce/orders/order-details";
-import SignInBasic from "layouts/authentication/sign-in/basic";
-import SignInCover from "layouts/authentication/sign-in/cover";
-import SignInIllustration from "layouts/authentication/sign-in/illustration";
-import SignUpCover from "layouts/authentication/sign-up/cover";
-import ResetCover from "layouts/authentication/reset-password/cover";
-
-// Material Dashboard 2 PRO React components
-import MDAvatar from "components/MDAvatar";
-
-// @mui icons
+import Dashboard from "layouts/dashboard";
+import Tables from "layouts/tables";
+import Billing from "layouts/billing";
+import RTL from "layouts/rtl";
+import Interactives from "layouts/Interactives";
+import Profile from "layouts/profile";
+import SignIn from "layouts/authentication/sign-in";
+import SignUp from "layouts/authentication/sign-up";
+import ResetPassord from "layouts/authentication/reset-password/cover/index"
 import Icon from "@mui/material/Icon";
-
-// Images
-import profilePicture from "assets/images/team-3.jpg";
-
+import Content from "layouts/Content";
+import SmartDesk from "layouts/SmartDesk";
+import CreateQuiz from 'layouts/CreateQuiz'
+import Quiz from "layouts/Quiz";
+import Quest from "layouts/Quest"
+import QuestDetail from "layouts/Quest/QuestDetail";
+import Assignment from "layouts/Assignment";
+import Courses from "layouts/CourseListing"
+import CreateCourse from 'layouts/Courses'
+import Activities from "layouts/Activities";
+import ActivityEditor from "layouts/ActivityCreation"
+import CreateAssignment from "layouts/CreateAssignments"
+import Sessions from 'layouts/Sessions'
+import SessionEditor from 'layouts/SessionCreation'
+import SessionDetail from 'layouts/SessionDetail'
+import CourseDetail from 'layouts/CourseDetail'
+import ActivityDetail from 'layouts/ActivityDetail'
+import QuizDetail from 'layouts/QuizDetail'
+import QuestDetailPage from "layouts/QuestDetail";
+import AssignmentDeail from 'layouts/AssignmentDetail'
 const routes = [
   {
     type: "collapse",
-    name: "Brooklyn Alice",
-    key: "brooklyn-alice",
-    icon: <MDAvatar src={profilePicture} alt="Brooklyn Alice" size="sm" />,
-    collapse: [
-      {
-        name: "My Profile",
-        key: "my-profile",
-        route: "/pages/profile/profile-overview",
-        component: <ProfileOverview />,
-      },
-      {
-        name: "Settings",
-        key: "profile-settings",
-        route: "/pages/account/settings",
-        component: <Settings />,
-      },
-      {
-        name: "Logout",
-        key: "logout",
-        route: "/authentication/sign-in/basic",
-        component: <SignInBasic />,
-      },
-    ],
-  },
-  { type: "divider", key: "divider-0" },
-  {
-    type: "collapse",
-    name: "Dashboards",
-    key: "dashboards",
-    icon: <Icon fontSize="medium">dashboard</Icon>,
-    collapse: [
-      {
-        name: "Analytics",
-        key: "analytics",
-        route: "/dashboards/analytics",
-        component: <Analytics />,
-      },
-      {
-        name: "Sales",
-        key: "sales",
-        route: "/dashboards/sales",
-        component: <Sales />,
-      },
-    ],
-  },
-  { type: "title", title: "Pages", key: "title-pages" },
-  {
-    type: "collapse",
-    name: "Pages",
-    key: "pages",
-    icon: <Icon fontSize="medium">image</Icon>,
-    collapse: [
-      {
-        name: "Profile",
-        key: "profile",
-        collapse: [
-          {
-            name: "Profile Overview",
-            key: "profile-overview",
-            route: "/pages/profile/profile-overview",
-            component: <ProfileOverview />,
-          },
-          {
-            name: "All Projects",
-            key: "all-projects",
-            route: "/pages/profile/all-projects",
-            component: <AllProjects />,
-          },
-        ],
-      },
-      {
-        name: "PractiseTest",
-        key: "practisetest",
-        collapse: [
-          {
-            name: "Practise Test",
-            key: "practise-test",
-            route: "/pages/practise/test",
-            component: <TestForm />,
-          },
-        ],
-      },
-      {
-        name: "Users",
-        key: "users",
-        collapse: [
-          {
-            name: "New User",
-            key: "new-user",
-            route: "/pages/users/new-user",
-            component: <NewUser />,
-          },
-        ],
-      },
-      {
-        name: "Account",
-        key: "account",
-        collapse: [
-          {
-            name: "Settings",
-            key: "settings",
-            route: "/pages/account/settings",
-            component: <Settings />,
-          },
-          {
-            name: "Billing",
-            key: "billing",
-            route: "/pages/account/billing",
-            component: <Billing />,
-          },
-          {
-            name: "Invoice",
-            key: "invoice",
-            route: "/pages/account/invoice",
-            component: <Invoice />,
-          },
-        ],
-      },
-      {
-        name: "Projects",
-        key: "projects",
-        collapse: [
-          {
-            name: "Timeline",
-            key: "timeline",
-            route: "/pages/projects/timeline",
-            component: <Timeline />,
-          },
-        ],
-      },
-      {
-        name: "Pricing Page",
-        key: "pricing-page",
-        route: "/pages/pricing-page",
-        component: <PricingPage />,
-      },
-      { name: "RTL", key: "rtl", route: "/pages/rtl", component: <RTL /> },
-      { name: "Widgets", key: "widgets", route: "/pages/widgets", component: <Widgets /> },
-      { name: "Charts", key: "charts", route: "/pages/charts", component: <Charts /> },
-      {
-        name: "Notfications",
-        key: "notifications",
-        route: "/pages/notifications",
-        component: <Notifications />,
-      },
-    ],
+    name: "Dashboard",
+    key: "dashboard",
+    icon: <Icon fontSize="small">dashboard</Icon>,
+    route: "/dashboard",
+    component: <Dashboard />,
   },
   {
     type: "collapse",
-    name: "Applications",
-    key: "applications",
-    icon: <Icon fontSize="medium">apps</Icon>,
-    collapse: [
-      {
-        name: "Kanban",
-        key: "kanban",
-        route: "/applications/kanban",
-        component: <Kanban />,
-      },
-      {
-        name: "Wizard",
-        key: "wizard",
-        route: "/applications/wizard",
-        component: <Wizard />,
-      },
-      {
-        name: "Data Tables",
-        key: "data-tables",
-        route: "/applications/data-tables",
-        component: <DataTables />,
-      },
-      {
-        name: "Calendar",
-        key: "calendar",
-        route: "/applications/calendar",
-        component: <Calendar />,
-      },
-    ],
+    name: "Tables",
+    key: "tables",
+    icon: <Icon fontSize="small">table_view</Icon>,
+    route: "/tables",
+    component: <Tables />,
   },
   {
     type: "collapse",
-    name: "Ecommerce",
-    key: "ecommerce",
-    icon: <Icon fontSize="medium">shopping_basket</Icon>,
-    collapse: [
-      {
-        name: "Products",
-        key: "products",
-        collapse: [
-          {
-            name: "New Product",
-            key: "new-product",
-            route: "/ecommerce/products/new-product",
-            component: <NewProduct />,
-          },
-          {
-            name: "Edit Product",
-            key: "edit-product",
-            route: "/ecommerce/products/edit-product",
-            component: <EditProduct />,
-          },
-          {
-            name: "Product Page",
-            key: "product-page",
-            route: "/ecommerce/products/product-page",
-            component: <ProductPage />,
-          },
-        ],
-      },
-      {
-        name: "Orders",
-        key: "orders",
-        collapse: [
-          {
-            name: "Order List",
-            key: "order-list",
-            route: "/ecommerce/orders/order-list",
-            component: <OrderList />,
-          },
-          {
-            name: "Order Details",
-            key: "order-details",
-            route: "/ecommerce/orders/order-details",
-            component: <OrderDetails />,
-          },
-        ],
-      },
-    ],
+    name: "Smart Desk",
+    key: "smart-desk",
+    icon: <Icon fontSize="small">desk_icon</Icon>,
+    route: "/smart-desk",
+    component: <SmartDesk />,
   },
   {
     type: "collapse",
-    name: "Authentication",
-    key: "authentication",
-    icon: <Icon fontSize="medium">content_paste</Icon>,
-    collapse: [
+    name: "Content",
+    key: "content",
+    icon: <Icon fontSize="small">format_textdirection_r_to_l</Icon>,
+    component: <Content />,
+    subRoute:[
       {
-        name: "Sign In",
-        key: "sign-in",
-        collapse: [
-          {
-            name: "Basic",
-            key: "basic",
-            route: "/authentication/sign-in/basic",
-            component: <SignInBasic />,
-          },
-          {
-            name: "Cover",
-            key: "cover",
-            route: "/authentication/sign-in/cover",
-            component: <SignInCover />,
-          },
-          {
-            name: "Illustration",
-            key: "illustration",
-            route: "/authentication/sign-in/illustration",
-            component: <SignInIllustration />,
-          },
-        ],
-      },
-      {
-        name: "Sign Up",
-        key: "sign-up",
-        collapse: [
-          {
-            name: "Cover",
-            key: "cover",
-            route: "/authentication/sign-up/cover",
-            component: <SignUpCover />,
-          },
-        ],
-      },
-      {
-        name: "Reset Password",
-        key: "reset-password",
-        collapse: [
-          {
-            name: "Cover",
-            key: "cover",
-            route: "/authentication/reset-password/cover",
-            component: <ResetCover />,
-          },
-        ],
-      },
-    ],
-  },
-  { type: "divider", key: "divider-1" },
-  { type: "title", title: "Docs", key: "title-docs" },
-  {
-    type: "collapse",
-    name: "Basic",
-    key: "basic",
-    icon: <Icon fontSize="medium">upcoming</Icon>,
-    collapse: [
-      {
-        name: "Getting Started",
-        key: "getting-started",
-        collapse: [
-          {
-            name: "Overview",
-            key: "overview",
-            href: "https://www.creative-tim.com/learning-lab/react/overview/material-dashboard/",
-          },
-          {
-            name: "License",
-            key: "license",
-            href: "https://www.creative-tim.com/learning-lab/react/license/material-dashboard/",
-          },
-          {
-            name: "Quick Start",
-            key: "quick-start",
-            href: "https://www.creative-tim.com/learning-lab/react/quick-start/material-dashboard/",
-          },
-          {
-            name: "Build Tools",
-            key: "build-tools",
-            href: "https://www.creative-tim.com/learning-lab/react/build-tools/material-dashboard/",
-          },
-        ],
-      },
-      {
-        name: "Foundation",
-        key: "foundation",
-        collapse: [
-          {
-            name: "Colors",
-            key: "colors",
-            href: "https://www.creative-tim.com/learning-lab/react/colors/material-dashboard/",
-          },
-          {
-            name: "Grid",
-            key: "grid",
-            href: "https://www.creative-tim.com/learning-lab/react/grid/material-dashboard/",
-          },
-          {
-            name: "Typography",
-            key: "base-typography",
-            href: "https://www.creative-tim.com/learning-lab/react/base-typography/material-dashboard/",
-          },
-          {
-            name: "Borders",
-            key: "borders",
-            href: "https://www.creative-tim.com/learning-lab/react/borders/material-dashboard/",
-          },
-          {
-            name: "Box Shadows",
-            key: "box-shadows",
-            href: "https://www.creative-tim.com/learning-lab/react/box-shadows/material-dashboard/",
-          },
-          {
-            name: "Functions",
-            key: "functions",
-            href: "https://www.creative-tim.com/learning-lab/react/functions/material-dashboard/",
-          },
-          {
-            name: "Routing System",
-            key: "routing-system",
-            href: "https://www.creative-tim.com/learning-lab/react/routing-system/material-dashboard/",
-          },
-        ],
-      },
-    ],
+        type: "collapse",
+        name: "Activities",
+        key: "activities",
+        icon: <Icon fontSize="small">format_textdirection_r_to_l</Icon>,
+        route: "/content/activities",
+        component: <Quiz />,
+      },{
+        type: "collapse",
+        name: "Courses",
+        key: "courses",
+        icon: <Icon fontSize="small">format_textdirection_r_to_l</Icon>,
+        route: "/content/courses",
+        component: <Courses />,
+      },{
+        type: "collapse",
+        name: "Sessions",
+        key: "sessions",
+        icon: <Icon fontSize="small">format_textdirection_r_to_l</Icon>,
+        route: "/content/sessions",
+        component: <Quiz />,
+      }
+    ]
   },
   {
     type: "collapse",
-    name: "Components",
-    key: "components",
-    icon: <Icon fontSize="medium">view_in_ar</Icon>,
-    collapse: [
+    name: "Interactives",
+    key: "interactives",
+    icon: <Icon fontSize="small">quiz_icon</Icon>,
+    component: <Interactives />,
+    subRoute:[
       {
-        name: "Alerts",
-        key: "alerts",
-        href: "https://www.creative-tim.com/learning-lab/react/alerts/material-dashboard/",
-      },
-      {
-        name: "Avatar",
-        key: "avatar",
-        href: "https://www.creative-tim.com/learning-lab/react/avatar/material-dashboard/",
-      },
-      {
-        name: "Badge",
-        key: "badge",
-        href: "https://www.creative-tim.com/learning-lab/react/badge/material-dashboard/",
-      },
-      {
-        name: "Badge Dot",
-        key: "badge-dot",
-        href: "https://www.creative-tim.com/learning-lab/react/badge-dot/material-dashboard/",
-      },
-      {
-        name: "Box",
-        key: "box",
-        href: "https://www.creative-tim.com/learning-lab/react/box/material-dashboard/",
-      },
-      {
-        name: "Buttons",
-        key: "buttons",
-        href: "https://www.creative-tim.com/learning-lab/react/buttons/material-dashboard/",
-      },
-      {
-        name: "Date Picker",
-        key: "date-picker",
-        href: "https://www.creative-tim.com/learning-lab/react/datepicker/material-dashboard/",
-      },
-      {
-        name: "Dropzone",
-        key: "dropzone",
-        href: "https://www.creative-tim.com/learning-lab/react/dropzone/material-dashboard/",
-      },
-      {
-        name: "Editor",
-        key: "editor",
-        href: "https://www.creative-tim.com/learning-lab/react/quill/material-dashboard/",
-      },
-      {
-        name: "Input",
-        key: "input",
-        href: "https://www.creative-tim.com/learning-lab/react/input/material-dashboard/",
-      },
-      {
-        name: "Pagination",
-        key: "pagination",
-        href: "https://www.creative-tim.com/learning-lab/react/pagination/material-dashboard/",
-      },
-      {
-        name: "Progress",
-        key: "progress",
-        href: "https://www.creative-tim.com/learning-lab/react/progress/material-dashboard/",
-      },
-      {
-        name: "Snackbar",
-        key: "snackbar",
-        href: "https://www.creative-tim.com/learning-lab/react/snackbar/material-dashboard/",
-      },
-      {
-        name: "Social Button",
-        key: "social-button",
-        href: "https://www.creative-tim.com/learning-lab/react/social-buttons/material-dashboard/",
-      },
-      {
-        name: "Typography",
-        key: "typography",
-        href: "https://www.creative-tim.com/learning-lab/react/typography/material-dashboard/",
-      },
-    ],
+        type: "collapse",
+        name: "Quiz",
+        key: "quiz",
+        icon: <Icon fontSize="small">format_textdirection_r_to_l</Icon>,
+        route: "/interactives/quiz",
+        component: <Quiz />,
+      },{
+        type: "collapse",
+        name: "Quest",
+        key: "quest",
+        icon: <Icon fontSize="small">format_textdirection_r_to_l</Icon>,
+        route: "/interactives/quest",
+        component: <Quest />,
+      },{
+        type: "collapse",
+        name: "Assignment",
+        key: "assignment",
+        icon: <Icon fontSize="small">format_textdirection_r_to_l</Icon>,
+        route: "/interactives/assignment",
+        component: <Quiz />,
+      }
+    ]
   },
   {
     type: "collapse",
-    name: "Change Log",
-    key: "changelog",
-    href: "https://github.com/creativetimofficial/ct-material-dashboard-pro-react/blob/main/CHANGELOG.md",
-    icon: <Icon fontSize="medium">receipt_long</Icon>,
-    noCollapse: true,
+    name: "Profile",
+    key: "profile",
+    icon: <Icon fontSize="small">person</Icon>,
+    route: "/profile",
+    component: <Profile />,
   },
-];
+  {
+    type: "collapse",
+    name: "Sign In",
+    key: "sign-in",
+    icon: <Icon fontSize="small">login</Icon>,
+    route: "/authentication/sign-in",
+    component: <SignIn />,
+  },
+  {
+    type: "collapse",
+    name: "Sign Up",
+    key: "sign-up",
+    icon: <Icon fontSize="small">assignment</Icon>,
+    route: "/authentication/sign-up",
+    component: <SignUp />,
+  }, {
+    type: "collapse",
+    name: "Forgot Password",
+    key: "reset-password",
+    icon: <Icon fontSize="small">assignment</Icon>,
+    route: "/authentication/reset-password",
+    component: <ResetPassord />,
+  },
+  {
+    type: "collapse",
+    route: "/interactives/quiz/create",
+    component: <CreateQuiz/>,
+  },
+  {
+    type: "collapse",
+    route: "/interactives/assignment/create",
+    component: <CreateAssignment/>,
+  },
+  {
+    type: "collapse",
+    key: "quiz",
+    route: "/interactives/quiz",
+    component: <Quiz />,
+  },{
+    type: "collapse",
+    key: "quest",
+    route: "/interactives/quest",
+    component: <Quest />,
+  },{
+    type: "collapse",
+    key: "quest-detail",
+    route: "/interactives/quest/detail",
+    component: <QuestDetail />,
+  },{
+    type: "collapse",
+    key: "assignment",
+    route: "/interactives/assignment",
+    component: <Assignment />,
+  },
+  {
+    type: "collapse",    
+    key: "activities",
+    route: "/content/activities",
+    component: <Activities />,
+  },{
+    type: "collapse",    
+    key: "activities",
+    route: "/content/activity/:id",
+    component: <ActivityDetail />,
+  },{
+    type: "collapse",
+    key: "courses",
+    route: "/content/courses",
+    component: <Courses />,
+  },{
+    type: "collapse",
+    key: "courses",
+    route: "/content/course/create",
+    component: <CreateCourse />,
+  },{
+    type: "collapse",
+    key: "courses",
+    route: "/content/course/:id",
+    component: <CourseDetail />,
+  },
+  {
+    type: "collapse",
+    key: "activities",
+    route: "/content/activity/create",
+    component: <ActivityEditor/>,
+  },{
+    type: "collapse",    
+    key: "sessions",
+    route: "/content/sessions",
+    component: <Sessions />,
+  },{
+    type: "collapse",
+    key: "sessions",
+    route: "/content/session/create",
+    component: <SessionEditor/>,
+  },
+  {
+    type: "collapse",
+    key: "sessions-detail",
+    route: "/content/session/:id",
+    component: <SessionDetail/>,
+  },
+  {
+    type: "collapse",
+    key: "quiz-detail",
+    route: "/interactives/quiz/:id",
+    component: <QuizDetail/>,
+  },
+  {
+    type: "collapse",
+    key: "quest-detail",
+    route: "/interactives/quest/:id",
+    component: <QuestDetailPage/>,
+  },{
+    type: "collapse",
+    key: "assignment-detail",
+    route: "/interactives/assignment/:id",
+    component: <AssignmentDeail/>,                                                          
+  },
+];                                                                                      
 
 export default routes;

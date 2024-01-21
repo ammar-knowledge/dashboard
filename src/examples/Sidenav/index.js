@@ -1,65 +1,37 @@
-/**
-=========================================================
-* Material Dashboard 2 PRO React - v2.2.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-dashboard-pro-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
-import { useEffect, useState } from "react";
-
-// react-router-dom components
+import { useEffect,useState } from "react";
 import { useLocation, NavLink } from "react-router-dom";
-
-// prop-types is a library for typechecking of props.
 import PropTypes from "prop-types";
-
-// @mui material components
 import List from "@mui/material/List";
 import Divider from "@mui/material/Divider";
 import Link from "@mui/material/Link";
 import Icon from "@mui/material/Icon";
-
-// Material Dashboard 2 PRO React components
 import MDBox from "components/MDBox";
 import MDTypography from "components/MDTypography";
-
-// Material Dashboard 2 PRO React examples
+import MDButton from "components/MDButton";
 import SidenavCollapse from "examples/Sidenav/SidenavCollapse";
-import SidenavList from "examples/Sidenav/SidenavList";
-import SidenavItem from "examples/Sidenav/SidenavItem";
-
-// Custom styles for the Sidenav
 import SidenavRoot from "examples/Sidenav/SidenavRoot";
 import sidenavLogoLabel from "examples/Sidenav/styles/sidenav";
-
-// Material Dashboard 2 PRO React context
 import {
   useMaterialUIController,
   setMiniSidenav,
   setTransparentSidenav,
   setWhiteSidenav,
 } from "context";
+import { Accordion, AccordionDetails, AccordionSummary, Collapse } from "@mui/material";
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 function Sidenav({ color, brand, brandName, routes, ...rest }) {
-  const [openCollapse, setOpenCollapse] = useState(false);
-  const [openNestedCollapse, setOpenNestedCollapse] = useState(false);
   const [controller, dispatch] = useMaterialUIController();
-  const { miniSidenav, transparentSidenav, whiteSidenav, darkMode } = controller;
+  const { miniSidenav, transparentSidenav, whiteSidenav, darkMode, sidenavColor } = controller;
   const location = useLocation();
-  const { pathname } = location;
-  const collapseName = pathname.split("/").slice(1)[0];
-  const items = pathname.split("/").slice(1);
-  const itemParentName = items[1];
-  const itemName = items[items.length - 1];
-
+  const collapseName = location.pathname.replace("/", "");
+  const [open, setOpen] = useState(false);
+  const [openMenuName,setOpenMenuName] = useState()
+  const handleClick = (menuName) => {
+    console.log('hello')
+    setOpen(!open);
+    setOpenMenuName(menuName)
+  };
   let textColor = "white";
 
   if (transparentSidenav || (whiteSidenav && !darkMode)) {
@@ -69,11 +41,6 @@ function Sidenav({ color, brand, brandName, routes, ...rest }) {
   }
 
   const closeSidenav = () => setMiniSidenav(dispatch, true);
-
-  useEffect(() => {
-    setOpenCollapse(collapseName);
-    setOpenNestedCollapse(itemParentName);
-  }, []);
 
   useEffect(() => {
     // A function that sets the mini state of the sidenav.
@@ -95,152 +62,81 @@ function Sidenav({ color, brand, brandName, routes, ...rest }) {
     return () => window.removeEventListener("resize", handleMiniSidenav);
   }, [dispatch, location]);
 
-  // Render all the nested collapse items from the routes.js
-  const renderNestedCollapse = (collapse) => {
-    const template = collapse.map(({ name, route, key, href }) =>
-      href ? (
+  // Render all the routes from the routes.js (All the visible items on the Sidenav)
+  const renderRoutes = routes.map(({ type, name, icon, title, noCollapse, key, href, route, subRoute }) => {
+    let returnValue;
+    console.log(subRoute)
+    if (type === "collapse") {
+      returnValue = href ? (
         <Link
-          key={key}
           href={href}
+          key={key}
           target="_blank"
           rel="noreferrer"
           sx={{ textDecoration: "none" }}
         >
-          <SidenavItem name={name} nested />
-        </Link>
-      ) : (
-        <NavLink to={route} key={key} sx={{ textDecoration: "none" }}>
-          <SidenavItem name={name} active={route === pathname} nested />
-        </NavLink>
-      )
-    );
-
-    return template;
-  };
-  // Render the all the collpases from the routes.js
-  const renderCollapse = (collapses) =>
-    collapses.map(({ name, collapse, route, href, key }) => {
-      let returnValue;
-
-      if (collapse) {
-        returnValue = (
-          <SidenavItem
-            key={key}
-            color={color}
+          <SidenavCollapse
             name={name}
-            active={key === itemParentName ? "isParent" : false}
-            open={openNestedCollapse === key}
-            onClick={({ currentTarget }) =>
-              openNestedCollapse === key && currentTarget.classList.contains("MuiListItem-root")
-                ? setOpenNestedCollapse(false)
-                : setOpenNestedCollapse(key)
-            }
-          >
-            {renderNestedCollapse(collapse)}
-          </SidenavItem>
-        );
-      } else {
-        returnValue = href ? (
-          <Link
-            href={href}
-            key={key}
-            target="_blank"
-            rel="noreferrer"
-            sx={{ textDecoration: "none" }}
-          >
-            <SidenavItem color={color} name={name} active={key === itemName} />
-          </Link>
-        ) : (
-          <NavLink to={route} key={key} sx={{ textDecoration: "none" }}>
-            <SidenavItem color={color} name={name} active={key === itemName} />
-          </NavLink>
-        );
-      }
-      return <SidenavList key={key}>{returnValue}</SidenavList>;
-    });
-
-  // Render all the routes from the routes.js (All the visible items on the Sidenav)
-  const renderRoutes = routes.map(
-    ({ type, name, icon, title, collapse, noCollapse, key, href, route }) => {
-      let returnValue;
-
-      if (type === "collapse") {
-        if (href) {
-          returnValue = (
-            <Link
-              href={href}
-              key={key}
-              target="_blank"
-              rel="noreferrer"
-              sx={{ textDecoration: "none" }}
-            >
-              <SidenavCollapse
-                name={name}
-                icon={icon}
-                active={key === collapseName}
-                noCollapse={noCollapse}
-              />
-            </Link>
-          );
-        } else if (noCollapse && route) {
-          returnValue = (
-            <NavLink to={route} key={key}>
-              <SidenavCollapse
-                name={name}
-                icon={icon}
-                noCollapse={noCollapse}
-                active={key === collapseName}
-              >
-                {collapse ? renderCollapse(collapse) : null}
-              </SidenavCollapse>
-            </NavLink>
-          );
-        } else {
-          returnValue = (
-            <SidenavCollapse
-              key={key}
-              name={name}
-              icon={icon}
-              active={key === collapseName}
-              open={openCollapse === key}
-              onClick={() => (openCollapse === key ? setOpenCollapse(false) : setOpenCollapse(key))}
-            >
-              {collapse ? renderCollapse(collapse) : null}
-            </SidenavCollapse>
-          );
-        }
-      } else if (type === "title") {
-        returnValue = (
-          <MDTypography
-            key={key}
-            color={textColor}
-            display="block"
-            variant="caption"
-            fontWeight="bold"
-            textTransform="uppercase"
-            pl={3}
-            mt={2}
-            mb={1}
-            ml={1}
-          >
-            {title}
-          </MDTypography>
-        );
-      } else if (type === "divider") {
-        returnValue = (
-          <Divider
-            key={key}
-            light={
-              (!darkMode && !whiteSidenav && !transparentSidenav) ||
-              (darkMode && !transparentSidenav && whiteSidenav)
-            }
+            icon={icon}
+            active={key === collapseName}
+            noCollapse={noCollapse}
+            subRoute={subRoute}
           />
-        );
-      }
+        </Link>
+      ) : name && (
+        <>
+          {subRoute ?
+            <>
+              <NavLink key={key} to={route} onClick={() => handleClick(name)}>
+                <SidenavCollapse name={name} icon={icon} active={key === collapseName} subRoute={subRoute} />
+              </NavLink>
 
-      return returnValue;
+              <Collapse in={openMenuName === name && open} timeout="auto" unmountOnExit>
+                {subRoute.map(({ type, name, icon, title, noCollapse, key, href, route, subRoute }) => (
+                  <NavLink key={key} to={route}>
+                    <SidenavCollapse name={name} icon={icon} active={key === collapseName} subRoute={subRoute} />
+                  </NavLink>
+                ))}
+              </Collapse>
+            </>
+            :
+            <NavLink key={key} to={route}>
+              <SidenavCollapse name={name} icon={icon} active={key === collapseName} subRoute={subRoute} />
+            </NavLink>
+          }
+        </>
+      );
+    } else if (type === "title") {
+      returnValue = (
+        <MDTypography
+          key={key}
+          color={textColor}
+          display="block"
+          variant="caption"
+          fontWeight="bold"
+          textTransform="uppercase"
+          pl={3}
+          mt={2}
+          mb={1}
+          ml={1}
+        >
+          {title}
+        </MDTypography>
+      );
+    } else if (type === "divider") {
+      returnValue = (
+        <Divider
+          key={key}
+          light={
+            (!darkMode && !whiteSidenav && !transparentSidenav) ||
+            (darkMode && !transparentSidenav && whiteSidenav)
+          }
+        />
+      );
     }
-  );
+
+    return returnValue;
+  });
 
   return (
     <SidenavRoot
@@ -263,7 +159,7 @@ function Sidenav({ color, brand, brandName, routes, ...rest }) {
           </MDTypography>
         </MDBox>
         <MDBox component={NavLink} to="/" display="flex" alignItems="center">
-          {brand && <MDBox component="img" src={brand} alt="Brand" width="2rem" />}
+          {brand && <MDBox component="img" src={brand} alt="Brand" width="100%" />}
           <MDBox
             width={!brandName && "100%"}
             sx={(theme) => sidenavLogoLabel(theme, { miniSidenav })}
@@ -280,7 +176,7 @@ function Sidenav({ color, brand, brandName, routes, ...rest }) {
           (darkMode && !transparentSidenav && whiteSidenav)
         }
       />
-      <List>{renderRoutes}</List>
+      <List >{renderRoutes}</List>
     </SidenavRoot>
   );
 }

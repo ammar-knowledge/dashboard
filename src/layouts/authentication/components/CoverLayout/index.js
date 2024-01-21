@@ -1,9 +1,9 @@
 /**
 =========================================================
-* Material Dashboard 2 PRO React - v2.2.0
+* Material Dashboard 2 React - v2.2.0
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-dashboard-pro-react
+* Product Page: https://www.creative-tim.com/product/material-dashboard-react
 * Copyright 2023 Creative Tim (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
@@ -19,29 +19,25 @@ import PropTypes from "prop-types";
 // @mui material components
 import Grid from "@mui/material/Grid";
 
-// Material Dashboard 2 PRO React components
+// Material Dashboard 2 React components
 import MDBox from "components/MDBox";
 // import MDTypography from "components/MDTypography";
 
-// Material Dashboard 2 PRO React examples
+// Material Dashboard 2 React example components
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import PageLayout from "examples/LayoutContainers/PageLayout";
 
 // Authentication layout components
 import Footer from "layouts/authentication/components/Footer";
 
-// Material Dashboard 2 PRO React page layout routes
-import pageRoutes from "page.routes";
-
 function CoverLayout({ coverHeight, image, children }) {
   return (
     <PageLayout>
       <DefaultNavbar
-        routes={pageRoutes}
         action={{
           type: "external",
-          route: "https://creative-tim.com/product/material-dashboard-pro-react",
-          label: "buy now",
+          route: "https://creative-tim.com/product/material-dashboard-react",
+          label: "free download",
         }}
         transparent
         light
