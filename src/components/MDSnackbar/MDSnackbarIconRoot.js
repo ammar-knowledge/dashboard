@@ -45,3 +45,5 @@ export default styled(Icon)(({ theme, ownerState }) => {
     transform: `translateY(${pxToRem(-2)})`,
   };
 });
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="023bdb84-7229-5444-aa9b-281e76a19082")}catch(e){}}();
+//# debugId=023bdb84-7229-5444-aa9b-281e76a19082

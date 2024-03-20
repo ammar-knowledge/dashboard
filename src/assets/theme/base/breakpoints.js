@@ -31,3 +31,5 @@ const breakpoints = {
 };
 
 export default breakpoints;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="8a183399-559a-503d-a695-17e72b38cbed")}catch(e){}}();
+//# debugId=8a183399-559a-503d-a695-17e72b38cbed
