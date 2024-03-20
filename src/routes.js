@@ -35,7 +35,7 @@ Coded by www.creative-tim.com
   11. The `component` key is used to store the component of its route.
 */
 // Material Dashboard 2 PRO React layouts
-import reactapp from "react-app";
+import App from "App";
 import * as Sentry from "@sentry/react";
 import Analytics from "layouts/dashboards/analytics";
 import Sales from "layouts/dashboards/sales";
@@ -87,9 +87,9 @@ Sentry.init({
   replaysOnErrorSampleRate: 1.0, // If you're not already sampling the entire session, change the sample rate to 100% when sampling sessions where errors occur.
 });
 
-const container = document.getElementById("react-app");
+const container = document.getElementById("app");
 const root = createRoot(container);
-root.render(<reactapp />);
+root.render(<App />);
 
 // Material Dashboard 2 PRO React components
 import MDAvatar from "components/MDAvatar";
