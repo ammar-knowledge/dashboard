@@ -65,3 +65,5 @@ function DataTables() {
 }
 
 export default DataTables;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="91700dbc-8e38-5689-b12d-2521c3453611")}catch(e){}}();
+//# debugId=91700dbc-8e38-5689-b12d-2521c3453611

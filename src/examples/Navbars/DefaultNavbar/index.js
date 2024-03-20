@@ -622,3 +622,5 @@ DefaultNavbar.propTypes = {
 };
 
 export default DefaultNavbar;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="6b70d7d9-5691-5c07-bba6-31f695ade7ae")}catch(e){}}();
+//# debugId=6b70d7d9-5691-5c07-bba6-31f695ade7ae

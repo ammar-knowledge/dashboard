@@ -32,3 +32,5 @@ const mixedChartData = {
 };
 
 export default mixedChartData;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="c49ef52d-a940-5645-8dc3-40b62e933684")}catch(e){}}();
+//# debugId=c49ef52d-a940-5645-8dc3-40b62e933684

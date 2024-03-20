@@ -154,3 +154,5 @@ Header.propTypes = {
 };
 
 export default Header;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="5df86fa9-003d-51c8-a6ea-deb2fff77eb0")}catch(e){}}();
+//# debugId=5df86fa9-003d-51c8-a6ea-deb2fff77eb0

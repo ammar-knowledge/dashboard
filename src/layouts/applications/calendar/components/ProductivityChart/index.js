@@ -130,3 +130,5 @@ function ProductivityChart() {
 }
 
 export default ProductivityChart;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="9fdfbab0-420c-5557-b30e-b6a4e4bc3f1b")}catch(e){}}();
+//# debugId=9fdfbab0-420c-5557-b30e-b6a4e4bc3f1b

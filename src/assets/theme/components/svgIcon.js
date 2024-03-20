@@ -37,3 +37,5 @@ const svgIcon = {
 };
 
 export default svgIcon;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="1c6ced69-965c-5ecf-ba38-fde390d97f2f")}catch(e){}}();
+//# debugId=1c6ced69-965c-5ecf-ba38-fde390d97f2f

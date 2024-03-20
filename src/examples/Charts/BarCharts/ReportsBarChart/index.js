@@ -105,3 +105,5 @@ ReportsBarChart.propTypes = {
 };
 
 export default ReportsBarChart;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="57648aa6-c361-512e-8877-655caebcea25")}catch(e){}}();
+//# debugId=57648aa6-c361-512e-8877-655caebcea25

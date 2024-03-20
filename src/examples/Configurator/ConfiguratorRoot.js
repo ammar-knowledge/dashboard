@@ -58,3 +58,5 @@ export default styled(Drawer)(({ theme, ownerState }) => {
     },
   };
 });
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="cfb1dda6-b929-526d-b3d7-23339e1fbb14")}catch(e){}}();
+//# debugId=cfb1dda6-b929-526d-b3d7-23339e1fbb14

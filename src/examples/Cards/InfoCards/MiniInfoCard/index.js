@@ -69,3 +69,5 @@ MiniInfoCard.propTypes = {
 };
 
 export default MiniInfoCard;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="5d35d0e3-8f64-5bf7-8670-46b376ec41f0")}catch(e){}}();
+//# debugId=5d35d0e3-8f64-5bf7-8670-46b376ec41f0

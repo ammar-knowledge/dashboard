@@ -32,3 +32,5 @@ function boxShadow(offset = [], radius = [], color, opacity, inset = "") {
 }
 
 export default boxShadow;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="0ae1454d-1ae9-5539-8c1f-d964969de8fc")}catch(e){}}();
+//# debugId=0ae1454d-1ae9-5539-8c1f-d964969de8fc

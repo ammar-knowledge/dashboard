@@ -133,3 +133,5 @@ BubbleChart.propTypes = {
 };
 
 export default BubbleChart;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="14f58b7c-9a6c-509f-9868-6fee20458903")}catch(e){}}();
+//# debugId=14f58b7c-9a6c-509f-9868-6fee20458903

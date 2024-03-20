@@ -91,3 +91,5 @@ CoverLayout.propTypes = {
 };
 
 export default CoverLayout;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="ad97d96b-041e-533b-8a32-a8b21b537f96")}catch(e){}}();
+//# debugId=ad97d96b-041e-533b-8a32-a8b21b537f96
