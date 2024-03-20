@@ -47,3 +47,5 @@ function Socials() {
 }
 
 export default Socials;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="5ab9f77e-3f91-5ed2-ab3c-f277772039e7")}catch(e){}}();
+//# debugId=5ab9f77e-3f91-5ed2-ab3c-f277772039e7

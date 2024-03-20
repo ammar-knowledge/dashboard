@@ -62,3 +62,5 @@ DashboardLayout.propTypes = {
 };
 
 export default DashboardLayout;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="15d2c40a-3087-5c0e-99fc-c8fc8c9fec2d")}catch(e){}}();
+//# debugId=15d2c40a-3087-5c0e-99fc-c8fc8c9fec2d

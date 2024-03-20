@@ -118,3 +118,5 @@ CategoriesList.propTypes = {
 };
 
 export default CategoriesList;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="16c2dc5a-b394-5d0b-b819-a121cbb8741b")}catch(e){}}();
+//# debugId=16c2dc5a-b394-5d0b-b819-a121cbb8741b

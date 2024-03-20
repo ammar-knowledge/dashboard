@@ -92,3 +92,5 @@ function ChannelsChart() {
 }
 
 export default ChannelsChart;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="0c95e016-4af5-542b-b92d-e71ee8a6cec8")}catch(e){}}();
+//# debugId=0c95e016-4af5-542b-b92d-e71ee8a6cec8

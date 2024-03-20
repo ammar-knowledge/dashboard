@@ -73,3 +73,5 @@ function Pricing() {
 }
 
 export default Pricing;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="06f56a1a-f8f5-51a3-8c3a-11ec09d7a34b")}catch(e){}}();
+//# debugId=06f56a1a-f8f5-51a3-8c3a-11ec09d7a34b

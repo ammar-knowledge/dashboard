@@ -34,3 +34,5 @@ function menuItem(theme) {
 }
 
 export default menuItem;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="26d207a0-2d80-59bd-baf1-6caa2cbbcc68")}catch(e){}}();
+//# debugId=26d207a0-2d80-59bd-baf1-6caa2cbbcc68

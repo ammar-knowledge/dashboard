@@ -49,3 +49,5 @@ NotificationItem.propTypes = {
 };
 
 export default NotificationItem;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="75b39ac2-762f-5afc-b650-4055a0a89b4c")}catch(e){}}();
+//# debugId=75b39ac2-762f-5afc-b650-4055a0a89b4c

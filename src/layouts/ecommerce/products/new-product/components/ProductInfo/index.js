@@ -98,3 +98,5 @@ function ProductInfo() {
 }
 
 export default ProductInfo;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="4f16b2cf-2dd1-5cc8-9b87-6ac9bea29777")}catch(e){}}();
+//# debugId=4f16b2cf-2dd1-5cc8-9b87-6ac9bea29777

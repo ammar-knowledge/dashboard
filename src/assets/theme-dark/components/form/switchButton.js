@@ -86,3 +86,5 @@ const switchButton = {
 };
 
 export default switchButton;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="c2efdce6-aedc-5372-86a6-d5f5f13ba4c0")}catch(e){}}();
+//# debugId=c2efdce6-aedc-5372-86a6-d5f5f13ba4c0

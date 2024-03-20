@@ -25,3 +25,5 @@ const verticalBarChartData = {
 };
 
 export default verticalBarChartData;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="67cb6f84-87cb-54c3-88dc-c9dad35da029")}catch(e){}}();
+//# debugId=67cb6f84-87cb-54c3-88dc-c9dad35da029

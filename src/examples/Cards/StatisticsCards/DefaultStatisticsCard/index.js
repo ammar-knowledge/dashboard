@@ -123,3 +123,5 @@ DefaultStatisticsCard.propTypes = {
 };
 
 export default DefaultStatisticsCard;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="5bd122d0-7454-53cc-9246-4f802f63edcb")}catch(e){}}();
+//# debugId=5bd122d0-7454-53cc-9246-4f802f63edcb

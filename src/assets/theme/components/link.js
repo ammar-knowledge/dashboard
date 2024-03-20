@@ -21,3 +21,5 @@ const link = {
 };
 
 export default link;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="86d1d437-55ea-5e78-90c1-cb9e67c2d384")}catch(e){}}();
+//# debugId=86d1d437-55ea-5e78-90c1-cb9e67c2d384

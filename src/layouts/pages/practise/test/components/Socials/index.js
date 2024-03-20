@@ -79,3 +79,5 @@ Socials.propTypes = {
 };
 
 export default Socials;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="64c9031e-7f4b-564f-9cf3-fe960abd3fa3")}catch(e){}}();
+//# debugId=64c9031e-7f4b-564f-9cf3-fe960abd3fa3

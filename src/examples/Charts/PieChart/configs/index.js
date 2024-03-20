@@ -66,3 +66,5 @@ function configs(labels, datasets) {
 }
 
 export default configs;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="643cb952-c2c2-58fe-9144-ba112494967e")}catch(e){}}();
+//# debugId=643cb952-c2c2-58fe-9144-ba112494967e

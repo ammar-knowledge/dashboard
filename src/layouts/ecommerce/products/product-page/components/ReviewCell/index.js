@@ -109,3 +109,5 @@ ReviewCell.propTypes = {
 };
 
 export default ReviewCell;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="2e0b0e78-e150-5167-8091-5da3a15f2626")}catch(e){}}();
+//# debugId=2e0b0e78-e150-5167-8091-5da3a15f2626

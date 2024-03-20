@@ -139,3 +139,5 @@ HorizontalBarChart.propTypes = {
 };
 
 export default HorizontalBarChart;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="3547785a-67a1-5fe8-aee0-4dbd87631230")}catch(e){}}();
+//# debugId=3547785a-67a1-5fe8-aee0-4dbd87631230

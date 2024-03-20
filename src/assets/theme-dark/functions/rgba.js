@@ -26,3 +26,5 @@ function rgba(color, opacity) {
 }
 
 export default rgba;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="27b16488-1f97-56ca-beb1-e334ee834604")}catch(e){}}();
+//# debugId=27b16488-1f97-56ca-beb1-e334ee834604

@@ -23,3 +23,5 @@ const defaultDoughnutChartData = {
 };
 
 export default defaultDoughnutChartData;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="64596296-b6d3-58c8-864d-73690215444e")}catch(e){}}();
+//# debugId=64596296-b6d3-58c8-864d-73690215444e

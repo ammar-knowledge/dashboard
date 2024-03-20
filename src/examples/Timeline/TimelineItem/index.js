@@ -99,3 +99,5 @@ TimelineItem.propTypes = {
 };
 
 export default TimelineItem;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="2b7d33d2-0802-5005-891d-b9177d881233")}catch(e){}}();
+//# debugId=2b7d33d2-0802-5005-891d-b9177d881233

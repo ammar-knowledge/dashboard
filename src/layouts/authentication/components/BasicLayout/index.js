@@ -80,3 +80,5 @@ BasicLayout.propTypes = {
 };
 
 export default BasicLayout;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="0b8c760e-f2a0-53f5-974a-3f6944abe29b")}catch(e){}}();
+//# debugId=0b8c760e-f2a0-53f5-974a-3f6944abe29b

@@ -98,3 +98,5 @@ const timelineData = [
 ];
 
 export default timelineData;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="123ea262-990d-5cc8-adcb-86978eb27c2b")}catch(e){}}();
+//# debugId=123ea262-990d-5cc8-adcb-86978eb27c2b

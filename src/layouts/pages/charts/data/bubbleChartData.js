@@ -44,3 +44,5 @@ const bubbleChartData = {
 };
 
 export default bubbleChartData;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="35ebe39e-ee2a-5db2-a36b-6cd9c53aaf17")}catch(e){}}();
+//# debugId=35ebe39e-ee2a-5db2-a36b-6cd9c53aaf17

@@ -76,3 +76,5 @@ MDDropzone.propTypes = {
 };
 
 export default MDDropzone;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="fa0fe1a5-3123-5282-ba64-fcce38d6ee39")}catch(e){}}();
+//# debugId=fa0fe1a5-3123-5282-ba64-fcce38d6ee39

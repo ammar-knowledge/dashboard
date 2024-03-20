@@ -72,3 +72,5 @@ const dataTableData = {
 };
 
 export default dataTableData;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="b6e941b2-88ac-518f-ba89-4b4884485aeb")}catch(e){}}();
+//# debugId=b6e941b2-88ac-518f-ba89-4b4884485aeb

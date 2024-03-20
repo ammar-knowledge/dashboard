@@ -380,3 +380,5 @@ function Configurator() {
 }
 
 export default Configurator;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="068b3a37-c578-51d3-8fb6-5ac21c7849da")}catch(e){}}();
+//# debugId=068b3a37-c578-51d3-8fb6-5ac21c7849da

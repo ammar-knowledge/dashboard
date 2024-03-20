@@ -27,3 +27,5 @@ const cardContent = {
 };
 
 export default cardContent;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="75591021-0b5f-53c4-9cb4-6429bfd021fa")}catch(e){}}();
+//# debugId=75591021-0b5f-53c4-9cb4-6429bfd021fa

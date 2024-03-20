@@ -63,3 +63,5 @@ function UpcomingEvents() {
 }
 
 export default UpcomingEvents;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="755c4495-1e06-5b08-80a8-b89af69d3c8a")}catch(e){}}();
+//# debugId=755c4495-1e06-5b08-80a8-b89af69d3c8a

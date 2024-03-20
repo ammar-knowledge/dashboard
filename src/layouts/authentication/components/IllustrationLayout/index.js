@@ -109,3 +109,5 @@ IllustrationLayout.propTypes = {
 };
 
 export default IllustrationLayout;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="de60b49b-c25a-5615-b029-30d4fec91983")}catch(e){}}();
+//# debugId=de60b49b-c25a-5615-b029-30d4fec91983

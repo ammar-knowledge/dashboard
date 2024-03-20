@@ -30,3 +30,5 @@ const gradientLineChartData = {
 };
 
 export default gradientLineChartData;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="c10c5078-c593-592d-b7fd-f011450c2bec")}catch(e){}}();
+//# debugId=c10c5078-c593-592d-b7fd-f011450c2bec

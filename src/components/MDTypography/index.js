@@ -96,3 +96,5 @@ MDTypography.propTypes = {
 };
 
 export default MDTypography;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="eefa25af-342c-5e3d-b8e2-94a1be35c9e7")}catch(e){}}();
+//# debugId=eefa25af-342c-5e3d-b8e2-94a1be35c9e7

@@ -25,3 +25,5 @@ const horizontalBarChartData = {
 };
 
 export default horizontalBarChartData;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="74a6fce4-2fe8-59bc-a679-cb5966caa52d")}catch(e){}}();
+//# debugId=74a6fce4-2fe8-59bc-a679-cb5966caa52d

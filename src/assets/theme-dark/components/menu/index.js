@@ -47,3 +47,5 @@ const menu = {
 };
 
 export default menu;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="98b76acc-bf75-5690-886b-5354a0509200")}catch(e){}}();
+//# debugId=98b76acc-bf75-5690-886b-5354a0509200

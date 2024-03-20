@@ -63,3 +63,5 @@ const tabs = {
 };
 
 export default tabs;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="34bd8f1e-a21d-53db-a938-d77785b8098b")}catch(e){}}();
+//# debugId=34bd8f1e-a21d-53db-a938-d77785b8098b

@@ -139,3 +139,5 @@ VerticalBarChart.propTypes = {
 };
 
 export default VerticalBarChart;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="89d8e948-1b49-52ff-a4dc-f61a96ad00b6")}catch(e){}}();
+//# debugId=89d8e948-1b49-52ff-a4dc-f61a96ad00b6

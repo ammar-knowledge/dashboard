@@ -79,3 +79,5 @@ const profilesListData = [
 ];
 
 export default profilesListData;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="ed170d02-b038-5a26-8c87-a9bfa33f49ea")}catch(e){}}();
+//# debugId=ed170d02-b038-5a26-8c87-a9bfa33f49ea

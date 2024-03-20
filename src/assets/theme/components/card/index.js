@@ -44,3 +44,5 @@ const card = {
 };
 
 export default card;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="ea7bd3a9-5d66-5507-be88-f89da32050d4")}catch(e){}}();
+//# debugId=ea7bd3a9-5d66-5507-be88-f89da32050d4

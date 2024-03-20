@@ -42,3 +42,5 @@ const salesTableData = [
 ];
 
 export default salesTableData;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="68efd187-7858-5ed3-af35-97001938bfcd")}catch(e){}}();
+//# debugId=68efd187-7858-5ed3-af35-97001938bfcd

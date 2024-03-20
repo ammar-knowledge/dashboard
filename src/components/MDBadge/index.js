@@ -68,3 +68,5 @@ MDBadge.propTypes = {
 };
 
 export default MDBadge;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="d583b676-d4b3-5b07-84e5-6bb4d1e3ab9e")}catch(e){}}();
+//# debugId=d583b676-d4b3-5b07-84e5-6bb4d1e3ab9e

@@ -23,3 +23,5 @@ const polarChartData = {
 };
 
 export default polarChartData;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="23226d3a-c30c-5e2f-8a3c-04a4dd83ce1c")}catch(e){}}();
+//# debugId=23226d3a-c30c-5e2f-8a3c-04a4dd83ce1c

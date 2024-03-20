@@ -114,3 +114,5 @@ DefaultDoughnutChart.propTypes = {
 };
 
 export default DefaultDoughnutChart;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="51cae119-f29c-5e3b-8308-91268f3f698b")}catch(e){}}();
+//# debugId=51cae119-f29c-5e3b-8308-91268f3f698b

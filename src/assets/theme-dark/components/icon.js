@@ -38,3 +38,5 @@ const icon = {
 };
 
 export default icon;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="a30317c2-3f52-5a9c-ac78-dda70e9fce82")}catch(e){}}();
+//# debugId=a30317c2-3f52-5a9c-ac78-dda70e9fce82

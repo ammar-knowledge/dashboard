@@ -170,3 +170,5 @@ const boards = {
 };
 
 export default boards;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="5e41d396-c49a-5214-b6ba-768ec1cdf071")}catch(e){}}();
+//# debugId=5e41d396-c49a-5214-b6ba-768ec1cdf071

@@ -23,3 +23,5 @@ const pieChartData = {
 };
 
 export default pieChartData;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="e3b5d1e1-4bd3-5893-8b74-4cbb624c54fa")}catch(e){}}();
+//# debugId=e3b5d1e1-4bd3-5893-8b74-4cbb624c54fa

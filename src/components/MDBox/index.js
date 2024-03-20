@@ -64,3 +64,5 @@ MDBox.propTypes = {
 };
 
 export default MDBox;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="e9b0926f-04d0-5393-94db-2eebae5eae02")}catch(e){}}();
+//# debugId=e9b0926f-04d0-5393-94db-2eebae5eae02

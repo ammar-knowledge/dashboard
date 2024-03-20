@@ -113,3 +113,5 @@ ComplexStatisticsCard.propTypes = {
 };
 
 export default ComplexStatisticsCard;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="346667d0-0add-57de-a540-5d169f46aea6")}catch(e){}}();
+//# debugId=346667d0-0add-57de-a540-5d169f46aea6

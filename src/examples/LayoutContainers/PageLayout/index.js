@@ -60,3 +60,5 @@ PageLayout.propTypes = {
 };
 
 export default PageLayout;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="2f49c257-38d9-545d-8b7b-08106f437ed8")}catch(e){}}();
+//# debugId=2f49c257-38d9-545d-8b7b-08106f437ed8

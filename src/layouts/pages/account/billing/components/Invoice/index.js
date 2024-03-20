@@ -71,3 +71,5 @@ Invoice.propTypes = {
 };
 
 export default Invoice;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="d8b9b73a-69f0-567d-8ccd-e1d6b2920f0d")}catch(e){}}();
+//# debugId=d8b9b73a-69f0-567d-8ccd-e1d6b2920f0d

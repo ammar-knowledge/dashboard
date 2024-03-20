@@ -31,3 +31,5 @@ const radarChartData = {
 };
 
 export default radarChartData;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="a6f5307e-b019-5aa9-a4ed-51e45fb0578a")}catch(e){}}();
+//# debugId=a6f5307e-b019-5aa9-a4ed-51e45fb0578a

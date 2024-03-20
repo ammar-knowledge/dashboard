@@ -44,3 +44,5 @@ const button = {
 };
 
 export default button;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="993d65aa-9936-583a-891d-b46c044a11a4")}catch(e){}}();
+//# debugId=993d65aa-9936-583a-891d-b46c044a11a4

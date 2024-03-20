@@ -22,3 +22,5 @@ function pxToRem(number, baseNumber = 16) {
 }
 
 export default pxToRem;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="9cc9bf58-17cc-5507-88dc-1dc8409e19d0")}catch(e){}}();
+//# debugId=9cc9bf58-17cc-5507-88dc-1dc8409e19d0

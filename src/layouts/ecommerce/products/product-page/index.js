@@ -78,3 +78,5 @@ function ProductPage() {
 }
 
 export default ProductPage;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="7e7f977f-c0f8-540e-923b-586c6299f7b9")}catch(e){}}();
+//# debugId=7e7f977f-c0f8-540e-923b-586c6299f7b9

@@ -47,3 +47,5 @@ const sidenav = {
 };
 
 export default sidenav;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="e427e501-e784-5304-99c0-6b1f6b54ed2f")}catch(e){}}();
+//# debugId=e427e501-e784-5304-99c0-6b1f6b54ed2f

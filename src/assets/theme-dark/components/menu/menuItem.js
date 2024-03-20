@@ -46,3 +46,5 @@ const menuItem = {
 };
 
 export default menuItem;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="804a3382-23de-56db-b71c-d29ef1dbb889")}catch(e){}}();
+//# debugId=804a3382-23de-56db-b71c-d29ef1dbb889

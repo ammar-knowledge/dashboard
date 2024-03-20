@@ -76,3 +76,5 @@ function NextEvents() {
 }
 
 export default NextEvents;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="ea533a7d-05df-5ccf-8f71-3af99fa81217")}catch(e){}}();
+//# debugId=ea533a7d-05df-5ccf-8f71-3af99fa81217

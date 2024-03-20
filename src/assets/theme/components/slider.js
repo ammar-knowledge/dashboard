@@ -79,3 +79,5 @@ const slider = {
 };
 
 export default slider;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="d1601cdf-9222-51cf-a086-7860a7566850")}catch(e){}}();
+//# debugId=d1601cdf-9222-51cf-a086-7860a7566850

@@ -85,3 +85,5 @@ SalesTableCell.propTypes = {
 };
 
 export default SalesTableCell;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="3cb2c3c2-50eb-51df-9267-1d59b2646d4e")}catch(e){}}();
+//# debugId=3cb2c3c2-50eb-51df-9267-1d59b2646d4e

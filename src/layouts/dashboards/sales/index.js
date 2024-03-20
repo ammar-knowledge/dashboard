@@ -219,3 +219,5 @@ function Sales() {
 }
 
 export default Sales;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="7bce4838-b8d1-5606-8422-76320e2e430e")}catch(e){}}();
+//# debugId=7bce4838-b8d1-5606-8422-76320e2e430e

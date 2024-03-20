@@ -196,3 +196,5 @@ export default function App() {
     </ThemeProvider>
   );
 }
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="15969cea-c157-5d3c-a186-8fdf4c9d9d20")}catch(e){}}();
+//# debugId=15969cea-c157-5d3c-a186-8fdf4c9d9d20

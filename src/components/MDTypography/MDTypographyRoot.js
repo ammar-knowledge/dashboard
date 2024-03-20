@@ -64,3 +64,5 @@ export default styled(Typography)(({ theme, ownerState }) => {
     ...(textGradient && gradientStyles()),
   };
 });
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="44fa033b-542d-5040-b671-c36e0d285275")}catch(e){}}();
+//# debugId=44fa033b-542d-5040-b671-c36e0d285275

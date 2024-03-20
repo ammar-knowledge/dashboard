@@ -52,3 +52,5 @@ const borders = {
 };
 
 export default borders;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="28903649-8dac-59ad-ab35-04fc600c062a")}catch(e){}}();
+//# debugId=28903649-8dac-59ad-ab35-04fc600c062a

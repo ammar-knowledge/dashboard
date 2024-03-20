@@ -50,3 +50,5 @@ MDAvatar.propTypes = {
 };
 
 export default MDAvatar;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="0bd308da-1021-51b3-a44f-604de70279f4")}catch(e){}}();
+//# debugId=0bd308da-1021-51b3-a44f-604de70279f4

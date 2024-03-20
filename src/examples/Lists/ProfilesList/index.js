@@ -92,3 +92,5 @@ ProfilesList.propTypes = {
 };
 
 export default ProfilesList;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="1f719108-88d2-5810-a22e-6a1b363fff9a")}catch(e){}}();
+//# debugId=1f719108-88d2-5810-a22e-6a1b363fff9a

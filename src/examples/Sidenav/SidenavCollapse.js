@@ -118,3 +118,5 @@ SidenavCollapse.propTypes = {
 };
 
 export default SidenavCollapse;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="2e44f32b-c9f2-5772-9805-e04a26d07374")}catch(e){}}();
+//# debugId=2e44f32b-c9f2-5772-9805-e04a26d07374

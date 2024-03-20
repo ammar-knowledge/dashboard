@@ -87,3 +87,5 @@ export default styled(Avatar)(({ theme, ownerState }) => {
     ...sizeValue,
   };
 });
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="7e29d7af-920b-59c2-bd57-b49a187821ca")}catch(e){}}();
+//# debugId=7e29d7af-920b-59c2-bd57-b49a187821ca

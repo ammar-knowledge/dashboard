@@ -27,3 +27,6 @@ pnpm-lock.yaml
 
 .vscode
 .history
+
+# Sentry Config File
+.sentryclirc

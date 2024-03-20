@@ -73,3 +73,5 @@ const categoriesListData = [
 ];
 
 export default categoriesListData;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="59aff2fd-2f4c-5e7e-8288-a6eb95e181f5")}catch(e){}}();
+//# debugId=59aff2fd-2f4c-5e7e-8288-a6eb95e181f5

@@ -38,3 +38,5 @@ SidenavList.propTypes = {
 };
 
 export default SidenavList;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="a25aab8f-d18c-5be5-ba02-909ae1a47db1")}catch(e){}}();
+//# debugId=a25aab8f-d18c-5be5-ba02-909ae1a47db1

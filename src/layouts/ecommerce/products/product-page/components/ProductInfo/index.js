@@ -126,3 +126,5 @@ function ProductInfo() {
 }
 
 export default ProductInfo;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="2345d204-e11c-519b-ab87-994db8910757")}catch(e){}}();
+//# debugId=2345d204-e11c-519b-ab87-994db8910757

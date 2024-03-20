@@ -114,3 +114,5 @@ PieChart.propTypes = {
 };
 
 export default PieChart;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="d277eec4-7245-52d8-99dd-333e7fc6cb00")}catch(e){}}();
+//# debugId=d277eec4-7245-52d8-99dd-333e7fc6cb00

@@ -32,3 +32,5 @@ function gradientChartLine(chart, color, opacity = 0.2) {
 }
 
 export default gradientChartLine;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="851b7673-49d1-5494-804f-0c443fad7f06")}catch(e){}}();
+//# debugId=851b7673-49d1-5494-804f-0c443fad7f06

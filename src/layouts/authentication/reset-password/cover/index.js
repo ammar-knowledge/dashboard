@@ -68,3 +68,5 @@ function Cover() {
 }
 
 export default Cover;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="9b9b848f-4388-58c7-b566-78658f181c2a")}catch(e){}}();
+//# debugId=9b9b848f-4388-58c7-b566-78658f181c2a

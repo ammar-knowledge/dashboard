@@ -134,3 +134,5 @@ export {
   setLayout,
   setDarkMode,
 };
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="2c3ed03f-ae1e-5f71-826b-e23c6b1ce915")}catch(e){}}();
+//# debugId=2c3ed03f-ae1e-5f71-826b-e23c6b1ce915

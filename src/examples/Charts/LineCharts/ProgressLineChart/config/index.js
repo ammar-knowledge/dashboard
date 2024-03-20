@@ -100,3 +100,5 @@ function configs(color, labels, label, data) {
 }
 
 export default configs;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="74a81c51-73c8-557f-86ef-7afa752c30ce")}catch(e){}}();
+//# debugId=74a81c51-73c8-557f-86ef-7afa752c30ce

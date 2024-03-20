@@ -23,3 +23,5 @@ const channelChartData = {
 };
 
 export default channelChartData;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="06c768c3-d737-557d-acbf-7ce854f017b9")}catch(e){}}();
+//# debugId=06c768c3-d737-557d-acbf-7ce854f017b9

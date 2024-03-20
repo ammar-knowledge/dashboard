@@ -102,3 +102,5 @@ function Sidenav() {
 }
 
 export default Sidenav;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="47ebc8d5-7aa9-5995-9d87-22216826aef5")}catch(e){}}();
+//# debugId=47ebc8d5-7aa9-5995-9d87-22216826aef5

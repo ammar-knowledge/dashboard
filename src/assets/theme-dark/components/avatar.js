@@ -35,3 +35,5 @@ const avatar = {
 };
 
 export default avatar;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="c73a6f10-72dc-5b7b-89e6-5d5ce0e4c636")}catch(e){}}();
+//# debugId=c73a6f10-72dc-5b7b-89e6-5d5ce0e4c636

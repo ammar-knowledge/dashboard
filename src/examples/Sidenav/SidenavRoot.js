@@ -90,3 +90,5 @@ export default styled(Drawer)(({ theme, ownerState }) => {
     },
   };
 });
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="394df3fb-eec9-53aa-9238-23c1065bfc16")}catch(e){}}();
+//# debugId=394df3fb-eec9-53aa-9238-23c1065bfc16

@@ -130,3 +130,5 @@ function Basic() {
 }
 
 export default Basic;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="ab3df4da-e5a3-5adc-97ba-b62d184f014b")}catch(e){}}();
+//# debugId=ab3df4da-e5a3-5adc-97ba-b62d184f014b

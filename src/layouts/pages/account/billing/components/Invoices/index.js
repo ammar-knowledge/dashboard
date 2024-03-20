@@ -49,3 +49,5 @@ function Invoices() {
 }
 
 export default Invoices;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="064a423c-b35b-55a3-b49d-459c7bcdb290")}catch(e){}}();
+//# debugId=064a423c-b35b-55a3-b49d-459c7bcdb290

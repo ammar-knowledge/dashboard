@@ -132,3 +132,5 @@ function BasicInfo() {
 }
 
 export default BasicInfo;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="86266710-7e5e-51db-b019-27cc73b981a2")}catch(e){}}();
+//# debugId=86266710-7e5e-51db-b019-27cc73b981a2

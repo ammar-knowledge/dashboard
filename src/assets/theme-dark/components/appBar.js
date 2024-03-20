@@ -26,3 +26,5 @@ const appBar = {
 };
 
 export default appBar;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="e06f8a3e-88fe-5cb1-b938-0f77d0b3804c")}catch(e){}}();
+//# debugId=e06f8a3e-88fe-5cb1-b938-0f77d0b3804c

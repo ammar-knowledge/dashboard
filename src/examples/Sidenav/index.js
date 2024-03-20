@@ -300,3 +300,5 @@ Sidenav.propTypes = {
 };
 
 export default Sidenav;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="dda28f99-b209-59d9-9d3f-7273546f45fe")}catch(e){}}();
+//# debugId=dda28f99-b209-59d9-9d3f-7273546f45fe

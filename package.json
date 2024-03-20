@@ -26,6 +26,8 @@
     "@mui/material": "5.12.3",
     "@react-jvectormap/core": "1.0.4",
     "@react-jvectormap/world": "1.1.2",
+    "@sentry/cli": "^2.30.2",
+    "@sentry/react": "^7.107.0",
     "chart.js": "4.3.0",
     "chroma-js": "2.4.2",
     "draft-convert": "^2.1.13",
@@ -52,10 +54,11 @@
   },
   "scripts": {
     "start": "cross-env GENERATE_SOURCEMAP=false react-scripts start",
-    "build": "cross-env GENERATE_SOURCEMAP=false react-scripts build",
+    "build": "cross-env GENERATE_SOURCEMAP=false react-scripts build && npm run sentry:sourcemaps",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start"
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
+    "sentry:sourcemaps": "sentry-cli sourcemaps inject --org ammar-knowledge --project test-project ./ && sentry-cli sourcemaps upload --org ammar-knowledge --project test-project ./"
   },
   "eslintConfig": {
     "extends": [

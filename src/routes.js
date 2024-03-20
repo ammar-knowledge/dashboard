@@ -32,10 +32,11 @@ Coded by www.creative-tim.com
   8. The `route` key is used to store the route location which is used for the react router.
   9. The `href` key is used to store the external links location.
   10. The `title` key is only for the item with the type of `title` and its used for the title text on the Sidenav.
-  10. The `component` key is used to store the component of its route.
+  11. The `component` key is used to store the component of its route.
 */
-
 // Material Dashboard 2 PRO React layouts
+import App from "App";
+import * as Sentry from "@sentry/react";
 import Analytics from "layouts/dashboards/analytics";
 import Sales from "layouts/dashboards/sales";
 import ProfileOverview from "layouts/pages/profile/profile-overview";
@@ -65,6 +66,30 @@ import SignInCover from "layouts/authentication/sign-in/cover";
 import SignInIllustration from "layouts/authentication/sign-in/illustration";
 import SignUpCover from "layouts/authentication/sign-up/cover";
 import ResetCover from "layouts/authentication/reset-password/cover";
+
+//...
+
+Sentry.init({
+  dsn: "https://376408d44b270591075204b5edeb42b9@o4506945182892032.ingest.us.sentry.io/4506945258848256",
+  integrations: [
+    Sentry.browserTracingIntegration(),
+    Sentry.replayIntegration({
+      maskAllText: false,
+      blockAllMedia: false,
+    }),
+  ],
+  // Performance Monitoring
+  tracesSampleRate: 1.0, //  Capture 100% of the transactions
+  // Set 'tracePropagationTargets' to control for which URLs distributed tracing should be enabled
+  tracePropagationTargets: ["localhost", /^https:\/\/yourserver\.io\/api/],
+  // Session Replay
+  replaysSessionSampleRate: 0.1, // This sets the sample rate at 10%. You may want to change it to 100% while in development and then sample at a lower rate in production.
+  replaysOnErrorSampleRate: 1.0, // If you're not already sampling the entire session, change the sample rate to 100% when sampling sessions where errors occur.
+});
+
+const container = document.getElementById("app");
+const root = createRoot(container);
+root.render(<App />);
 
 // Material Dashboard 2 PRO React components
 import MDAvatar from "components/MDAvatar";
@@ -534,3 +559,5 @@ const routes = [
 ];
 
 export default routes;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="c66ddc54-8cc5-591c-a2f7-64b81b2e3661")}catch(e){}}();
+//# debugId=c66ddc54-8cc5-591c-a2f7-64b81b2e3661

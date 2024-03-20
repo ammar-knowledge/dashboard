@@ -169,3 +169,5 @@ function Kanban() {
 }
 
 export default Kanban;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="943d9067-e651-5c08-ad49-a1cdd3a07e00")}catch(e){}}();
+//# debugId=943d9067-e651-5c08-ad49-a1cdd3a07e00

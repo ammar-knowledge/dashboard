@@ -122,3 +122,5 @@ function NewProduct() {
 }
 
 export default NewProduct;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="6eb8d0ef-6035-56c0-b8f5-3b992181ced2")}catch(e){}}();
+//# debugId=6eb8d0ef-6035-56c0-b8f5-3b992181ced2

@@ -197,3 +197,5 @@ const typography = {
 };
 
 export default typography;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="b79b8296-664c-591a-8049-a55db7e2063b")}catch(e){}}();
+//# debugId=b79b8296-664c-591a-8049-a55db7e2063b

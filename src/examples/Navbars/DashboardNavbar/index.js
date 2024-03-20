@@ -209,3 +209,5 @@ DashboardNavbar.propTypes = {
 };
 
 export default DashboardNavbar;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="7fd09d3d-3622-5fe9-9e29-4f3fe220c72e")}catch(e){}}();
+//# debugId=7fd09d3d-3622-5fe9-9e29-4f3fe220c72e

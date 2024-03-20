@@ -82,3 +82,5 @@ function OrdersOverview() {
 }
 
 export default OrdersOverview;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="fbb690ab-6001-5d76-b3ce-5f407ef12a0b")}catch(e){}}();
+//# debugId=fbb690ab-6001-5d76-b3ce-5f407ef12a0b

@@ -30,3 +30,5 @@ const defaultLineChartData = {
 };
 
 export default defaultLineChartData;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="69d5283b-e9b8-5798-a06e-1abf02725a96")}catch(e){}}();
+//# debugId=69d5283b-e9b8-5798-a06e-1abf02725a96

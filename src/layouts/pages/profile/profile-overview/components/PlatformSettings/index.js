@@ -113,3 +113,5 @@ function PlatformSettings() {
 }
 
 export default PlatformSettings;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="dcd5b288-544c-5afd-930d-39a0af9eed73")}catch(e){}}();
+//# debugId=dcd5b288-544c-5afd-930d-39a0af9eed73

@@ -125,3 +125,5 @@ Header.propTypes = {
 };
 
 export default Header;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="b3171322-096c-572b-9c93-b00f1997a968")}catch(e){}}();
+//# debugId=b3171322-096c-572b-9c93-b00f1997a968

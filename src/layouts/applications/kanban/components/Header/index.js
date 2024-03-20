@@ -72,3 +72,5 @@ function Header() {
 }
 
 export default Header;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="f23a5b8e-6c26-543b-8c07-df391df098b5")}catch(e){}}();
+//# debugId=f23a5b8e-6c26-543b-8c07-df391df098b5

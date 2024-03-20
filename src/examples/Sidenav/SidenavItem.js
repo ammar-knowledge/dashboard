@@ -98,3 +98,5 @@ SidenavItem.propTypes = {
 };
 
 export default SidenavItem;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="67cc1cd8-eb17-51fa-b35a-40602c7b1d2b")}catch(e){}}();
+//# debugId=67cc1cd8-eb17-51fa-b35a-40602c7b1d2b

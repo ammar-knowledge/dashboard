@@ -25,3 +25,5 @@ const caloriesChartData = {
 };
 
 export default caloriesChartData;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="1555fbb4-a826-530d-83a1-e5d94e760800")}catch(e){}}();
+//# debugId=1555fbb4-a826-530d-83a1-e5d94e760800

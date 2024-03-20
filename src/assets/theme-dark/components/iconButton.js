@@ -29,3 +29,5 @@ const iconButton = {
 };
 
 export default iconButton;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="01cdcea7-5423-5bfe-b98b-db5b86edbf60")}catch(e){}}();
+//# debugId=01cdcea7-5423-5bfe-b98b-db5b86edbf60

@@ -154,3 +154,5 @@ DefaultLineChart.propTypes = {
 };
 
 export default DefaultLineChart;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="4811768b-cdaf-59e2-8baf-4306834a64f1")}catch(e){}}();
+//# debugId=4811768b-cdaf-59e2-8baf-4306834a64f1

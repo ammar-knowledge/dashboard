@@ -164,3 +164,5 @@ function collapseArrow(theme, ownerState) {
 }
 
 export { collapseItem, collapseIconBox, collapseIcon, collapseText, collapseArrow };
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="621ebaa8-0eff-5340-9c6b-0eed79e8a12d")}catch(e){}}();
+//# debugId=621ebaa8-0eff-5340-9c6b-0eed79e8a12d

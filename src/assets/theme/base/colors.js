@@ -261,3 +261,5 @@ const colors = {
 };
 
 export default colors;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="9a13b4ef-3788-5e12-a9bd-d1a14a95d5a5")}catch(e){}}();
+//# debugId=9a13b4ef-3788-5e12-a9bd-d1a14a95d5a5

@@ -88,3 +88,5 @@ const TestApp = () => {
 };
 
 export default TestApp;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="bbfc4e51-0108-5c01-bb14-21f08516ac35")}catch(e){}}();
+//# debugId=bbfc4e51-0108-5c01-bb14-21f08516ac35

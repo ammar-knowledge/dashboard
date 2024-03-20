@@ -72,3 +72,5 @@ const calendarEventsData = [
 ];
 
 export default calendarEventsData;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="195688a7-e15f-5bbf-8a2c-d55c8f296845")}catch(e){}}();
+//# debugId=195688a7-e15f-5bbf-8a2c-d55c8f296845

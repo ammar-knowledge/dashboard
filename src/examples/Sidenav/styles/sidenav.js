@@ -33,3 +33,5 @@ export default function sidenavLogoLabel(theme, ownerState) {
     },
   };
 }
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="4af8b4f1-53e4-51f6-acee-3d493ceed8a0")}catch(e){}}();
+//# debugId=4af8b4f1-53e4-51f6-acee-3d493ceed8a0

@@ -117,3 +117,5 @@ Chart.propTypes = {
 };
 
 export default Chart;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="4aa38aa4-6a44-5420-9588-97b00bd27214")}catch(e){}}();
+//# debugId=4aa38aa4-6a44-5420-9588-97b00bd27214

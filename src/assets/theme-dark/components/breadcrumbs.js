@@ -34,3 +34,5 @@ const breadcrumbs = {
 };
 
 export default breadcrumbs;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="a4c0ddd2-e040-5155-9755-09062f238fc4")}catch(e){}}();
+//# debugId=a4c0ddd2-e040-5155-9755-09062f238fc4

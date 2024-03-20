@@ -20,3 +20,5 @@ function defaultItemIconBox(theme, ownerState) {
 }
 
 export default defaultItemIconBox;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="eaee0670-3b58-56b2-95fc-9720761d850e")}catch(e){}}();
+//# debugId=eaee0670-3b58-56b2-95fc-9720761d850e

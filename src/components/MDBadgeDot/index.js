@@ -112,3 +112,5 @@ MDBadgeDot.propTypes = {
 };
 
 export default MDBadgeDot;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="149e486d-cbd3-5eff-b5a7-c0488853e1e8")}catch(e){}}();
+//# debugId=149e486d-cbd3-5eff-b5a7-c0488853e1e8

@@ -116,3 +116,5 @@ ReportsLineChart.propTypes = {
 };
 
 export default ReportsLineChart;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="7ff9a53f-ef8f-570d-b741-fa4b1f628ab7")}catch(e){}}();
+//# debugId=7ff9a53f-ef8f-570d-b741-fa4b1f628ab7

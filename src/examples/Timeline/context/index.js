@@ -35,3 +35,5 @@ function useTimeline() {
 
 export { TimelineProvider, useTimeline };
 /* eslint-enable react/prop-types */
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="5f17f003-cd97-5df5-9073-ff251544eb38")}catch(e){}}();
+//# debugId=5f17f003-cd97-5df5-9073-ff251544eb38

@@ -22,3 +22,5 @@ function linearGradient(color, colorState, angle = 195) {
 }
 
 export default linearGradient;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="8f62320c-8a95-54f1-b0b6-fd7619abf369")}catch(e){}}();
+//# debugId=8f62320c-8a95-54f1-b0b6-fd7619abf369

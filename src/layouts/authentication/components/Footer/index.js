@@ -143,3 +143,5 @@ Footer.propTypes = {
 };
 
 export default Footer;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="19ae7542-3250-5417-a3c9-493535176ef7")}catch(e){}}();
+//# debugId=19ae7542-3250-5417-a3c9-493535176ef7

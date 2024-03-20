@@ -50,3 +50,5 @@ function Socials() {
 }
 
 export default Socials;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="e01e1803-bb4d-52a1-b50b-783c0bdce2b7")}catch(e){}}();
+//# debugId=e01e1803-bb4d-52a1-b50b-783c0bdce2b7

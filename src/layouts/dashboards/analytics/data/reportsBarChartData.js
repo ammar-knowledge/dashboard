@@ -19,3 +19,5 @@ const reportsBarChartData = {
 };
 
 export default reportsBarChartData;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="1571eeee-3b4b-5bb7-b27f-0cc8beb7fada")}catch(e){}}();
+//# debugId=1571eeee-3b4b-5bb7-b27f-0cc8beb7fada

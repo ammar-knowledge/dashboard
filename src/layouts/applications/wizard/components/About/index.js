@@ -76,3 +76,5 @@ function About() {
 }
 
 export default About;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="f6b9dad7-b027-5599-86cf-ec8ca70fe00c")}catch(e){}}();
+//# debugId=f6b9dad7-b027-5599-86cf-ec8ca70fe00c

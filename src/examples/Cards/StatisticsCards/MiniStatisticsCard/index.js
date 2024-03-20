@@ -170,3 +170,5 @@ MiniStatisticsCard.propTypes = {
 };
 
 export default MiniStatisticsCard;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="691d2f3a-a7e5-5451-a813-cb20fcdfd860")}catch(e){}}();
+//# debugId=691d2f3a-a7e5-5451-a813-cb20fcdfd860
